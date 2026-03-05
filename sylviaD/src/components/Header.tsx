@@ -32,7 +32,7 @@ export default function Header() {
                   : 'text-brown hover:text-terracotta'
               }`}
             >
-              Projects
+              Project
             </Link>
           </nav>
         </div>

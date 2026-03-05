@@ -7,23 +7,20 @@ export default function About() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-brown mb-4">About Me</h2>
-            <p className="text-xl text-brown-light">Where analytics meets storytelling</p>
+            <p className="text-xl text-brown-light">Story-driven content writer passionate about helping brands connect with their audience</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <div className="prose prose-lg">
                 <p className="text-brown-light leading-relaxed mb-6">
-                  I've always been fascinated by the intersection of numbers and narratives. Early in my career, I discovered that the most powerful insights emerge when you can both analyze complex data and communicate it in ways that resonate with people.
+                  I started out as a freelance writer for a travel blog, and that one role quietly set everything else in motion. Writing led to editing, editing led to AI content humanisation, and that eventually led to managing content teams for several blogs.
                 </p>
                 <p className="text-brown-light leading-relaxed mb-6">
-                  This realization led me to develop expertise across what might seem like disparate fields—writing, data analysis, editing, content management, and customer support. But to me, they're all connected threads in the same tapestry: understanding what matters to people and helping organizations communicate effectively.
-                </p>
-                <p className="text-brown-light leading-relaxed mb-6">
-                  Whether I'm building a dashboard that reveals customer pain points, crafting an article that explains technical concepts clearly, or helping a frustrated user solve their problem, I'm driven by the same goal: turning complexity into clarity and data into understanding.
+                The inconsistency of freelance work eventually pushed me to explore other fields, and I am glad it did. Over the years I have worked as a data entry steward, a sourcing assistant, a virtual assistant, and a customer support specialist, moving through different industries and environments while picking up new tools, systems, and skills along the way.
                 </p>
                 <p className="text-slate-light leading-relaxed">
-                  Today, I bring this multidisciplinary approach to every project, believing that the best solutions come from seeing problems from multiple angles—analytical and empathetic, quantitative and qualitative, technical and human.
+                  Every role has added something new, and together they have shaped a career I am genuinely proud of. I love creating but I also love working behind the scenes and making things run smoothly, and I look forward to bringing that same energy to your project.
                 </p>
               </div>
             </div>

@@ -1,6 +1,21 @@
 import { ChevronDown } from 'lucide-react'
 import avatar from '../assets/avatar.jpg'
+import "../logoSlider.css";
 
+
+const logos = [
+    "/logos/Simply.png",
+    "/logos/veeva.png",
+    "/logos/ems.png",
+    "/logos/tech_in_africa.png",
+    "/logos/wtp.webp",
+    "/logos/arng.jfif",
+    "/logos/capital_typing.webp",
+    "/logos/tns.svg",
+    "/logos/viator.png",
+    "/logos/np.png",
+    "/logos/tc.png",
+];
 
 export default function Hero() {
   const scrollToSkills = () => {
@@ -9,7 +24,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-cream-light via-cream to-cream-dark relative">
+    <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-cream-light via-cream to-cream-dark relative">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-64 h-64 border border-sage-light rounded-full"></div>
         <div className="absolute bottom-40 right-32 w-96 h-96 border border-terracotta-light rounded-full"></div>
@@ -27,11 +42,11 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-brown mb-6 leading-tight">
-            From Data to Dialogue
+            Sylvia Duruson
           </h1>
 
           <p className="text-xl md:text-2xl text-brown-light mb-12 max-w-3xl mx-auto font-light">
-            A multi-skilled professional specializing in writing, data analysis, and content strategy to drive engagement and understanding.
+            Hi there, I'm Sylvia, a remote professional who has built a career across content writing and management, administration, and customer support. It has been quite the journey and I would love to walk you through it.
           </p>
 
           <button
@@ -42,6 +57,19 @@ export default function Hero() {
             <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
           </button>
         </div>
+      </div>
+
+      {/* Company Logo Sliders */}
+      <div className="container mx-auto overflow-hidden">
+        <div className="slider mb-16">
+          <div className="slide-track">
+              {logos.concat(logos).map((logo, index) => (
+              <div className="slide" key={index}>
+                  <img src={logo} alt="company logo" />
+              </div>
+              ))}
+            </div>
+          </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">

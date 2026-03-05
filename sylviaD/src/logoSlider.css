@@ -1,0 +1,42 @@
+/* logoSlider.css */
+
+.slider {
+  overflow: hidden;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 10); /* logo width × number of logos */
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 120px;
+  filter: grayscale(30%);
+  margin-right: 5em;
+  margin-left: 5em;
+  transition: 0.3s;
+}
+
+.slide img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

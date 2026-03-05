@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Mail, Linkedin, Github, Twitter, Send } from 'lucide-react';
+import { Mail, Linkedin, Send,  } from 'lucide-react';
+import { FaSquareUpwork } from "react-icons/fa6";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -45,35 +46,37 @@ export default function Contact() {
                   className="flex items-center gap-3 text-brown hover:text-terracotta transition-colors"
                 >
                   <Mail className="w-5 h-5" />
-                  <span>techclime1@gmail.com</span>
+                  <span>sylviaduruson@gmail.com</span>
                 </a>
               </div>
 
               <div className="flex gap-4">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/sylvia-duruson-5128b31b6?"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-cream border-2 border-brown-light border-opacity-30 flex items-center justify-center text-brown hover:border-terracotta hover:text-terracotta transition-all hover:scale-110 shadow-sm"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
+
                 <a
-                  href="https://github.com"
+                  href="https://www.upwork.com/freelancers/~0114d726578d25903f?companyReference=1524697386281852929&mp_source=share"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-cream border-2 border-brown-light border-opacity-30 flex items-center justify-center text-brown hover:border-terracotta hover:text-terracotta transition-all hover:scale-110 shadow-sm"
                 >
-                  <Github className="w-5 h-5" />
-                </a>
-                <a
+                  <FaSquareUpwork className="w-5 h-5" />
+                </a> 
+                
+                {/*<a
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-cream border-2 border-brown-light border-opacity-30 flex items-center justify-center text-brown hover:border-terracotta hover:text-terracotta transition-all hover:scale-110 shadow-sm"
                 >
                   <Twitter className="w-5 h-5" />
-                </a>
+                </a> */}
               </div>
             </div>
 
