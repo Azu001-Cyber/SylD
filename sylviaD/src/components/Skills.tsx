@@ -58,7 +58,6 @@ export default function Skills() {
               My Experience
             </h2>
             <p className="text-xl text-brown-light">
-              My areas of expertise
             </p>
           </div>
 

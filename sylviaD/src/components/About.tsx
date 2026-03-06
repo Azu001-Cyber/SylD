@@ -7,11 +7,11 @@ export default function About() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-brown mb-4">About Me</h2>
-            <p className="text-xl text-brown-light">Story-driven content writer passionate about helping brands connect with their audience</p>
+            <p className="text-xl text-brown-light"></p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
+          <div className="grid md:grid-cols-2 gap-12 items-stretch">
+            <div className="order-2 md:order-1 flex flex-col justify-center">
               <div className="prose prose-lg">
                 <p className="text-brown-light leading-relaxed mb-6">
                   I started out as a freelance writer for a travel blog, and that one role quietly set everything else in motion. Writing led to editing, editing led to AI content humanisation, and that eventually led to managing content teams for several blogs.
@@ -25,12 +25,12 @@ export default function About() {
               </div>
             </div>
 
-            <div className="order-1 md:order-2">
-              <div className="relative">
+            <div className="order-1 md:order-2 relative">
+              <div className="relative w-full aspect-[3/4]">
                 <img
                   src={abtMe}
                   alt="Professional portrait"
-                  className="w-full aspect-square rounded-2xl object-cover shadow-2xl"
+                  className="w-full h-full rounded-2xl object-cover shadow-2xl overflow-clip"
                 />
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-terracotta rounded-full opacity-20"></div>
                 <div className="absolute -top-6 -left-6 w-24 h-24 bg-gold rounded-full opacity-20"></div>

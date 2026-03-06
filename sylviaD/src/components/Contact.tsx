@@ -30,14 +30,14 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-brown mb-4">Let's Connect</h2>
-            <p className="text-xl text-brown-light">Ready to collaborate? Get in touch and let's create something remarkable together.</p>
+            <p className="text-xl text-brown-light"></p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-semibold text-brown mb-6">Get in Touch</h3>
               <p className="text-brown-light mb-8 leading-relaxed">
-                Whether you're looking for a writer who understands data, an analyst who can tell stories, or a professional who bridges both worlds—I'd love to hear from you.
+                Have a project in mind or just want to explore possibilities, I would love to hear from you.
               </p>
 
               <div className="space-y-4 mb-8">

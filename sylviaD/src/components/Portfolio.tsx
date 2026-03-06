@@ -56,11 +56,11 @@ const projects: Project[] = [
 
 const filterOptions = [
   { id: 'all', label: 'All Projects' },
-  { id: 'writing', label: 'Writing & Content' },
-  { id: 'data-analysis', label: 'Data Analysis' },
-  { id: 'editing', label: 'Editing' },
-  { id: 'blog-management', label: 'Blog & SEO' },
-  { id: 'customer-support', label: 'Customer Support' }
+  { id: 'writing', label: 'Content Writing' },
+  { id: 'data-entry', label: 'Data Entry' },
+  { id: 'editing', label: 'AI Content Editing' },
+  { id: 'blog-management', label: 'Blog & Content Management' },
+  { id: 'customer-support', label: 'Customer Service Support' }
 ];
 
 export default function Portfolio() {
