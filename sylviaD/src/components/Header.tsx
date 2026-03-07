@@ -8,6 +8,7 @@ export default function Header() {
   const [isOpen, setOpen] = useState(false);
   const location = useLocation();
 
+
   return (
     <header className="bg-cream-light border-b border-brown-light border-opacity-20 sticky top-0 z-30">
       <div className="container mx-auto px-6 py-4">
@@ -17,10 +18,11 @@ export default function Header() {
             <span className="text-xl font-bold text-brown">Sylvia Duruson</span>
           </Link>
 
-            <nav className="flex items-center gap-8">
-              <div className={`nav-links ${isOpen? 'open' : ''}`}>
-                <Link
+             {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-8">
+           <Link
                   to="/"
+                  onClick={() => setOpen(false)}
                   className={`font-medium transition-colors ${
                     location.pathname === '/'
                       ? 'text-terracotta'
@@ -31,6 +33,7 @@ export default function Header() {
                 </Link>
                 <Link
                   to="/portfolio"
+                  onClick={() => setOpen(false)}
                   className={`font-medium transition-colors ${
                     location.pathname === '/portfolio'
                       ? 'text-terracotta'
@@ -42,6 +45,7 @@ export default function Header() {
 
                 <Link 
                 to="/about" 
+                onClick={() => setOpen(false)}
                 className={`font-medium transition-colors ${
                     location.pathname === '/about'
                       ? 'text-terracotta'
@@ -52,6 +56,63 @@ export default function Header() {
 
                 <Link 
                 to="/contact" 
+                onClick={() => setOpen(false)}
+                className={`font-medium transition-colors ${
+                    location.pathname === '/contact'
+                      ? 'text-terracotta'
+                      : 'text-brown hover:text-terracotta'
+                  }`}>
+                    Contact
+                </Link>
+        </nav>
+
+
+           <div className="hamburger md:hidden" aria-label='Toggle menu'>
+                <Hamburger toggled={isOpen} toggle={setOpen}/>
+            </div>
+
+          </div>
+          
+            {/* Mobile Menu */}
+            <nav className="flex items-center gap-8 md:hidden">
+              <div className={`nav-links ${isOpen? 'open' : ''}`}>
+                <Link
+                  to="/"
+                  onClick={() => setOpen(false)}
+                  className={`font-medium transition-colors ${
+                    location.pathname === '/'
+                      ? 'text-terracotta'
+                      : 'text-brown hover:text-terracotta'
+                  }`}
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/portfolio"
+                  onClick={() => setOpen(false)}
+                  className={`font-medium transition-colors ${
+                    location.pathname === '/portfolio'
+                      ? 'text-terracotta'
+                      : 'text-brown hover:text-terracotta'
+                  }`}
+                >
+                  Project
+                </Link>
+
+                <Link 
+                to="/about" 
+                onClick={() => setOpen(false)}
+                className={`font-medium transition-colors ${
+                    location.pathname === '/about'
+                      ? 'text-terracotta'
+                      : 'text-brown hover:text-terracotta'
+                  }`}>
+                    About
+                </Link>
+
+                <Link 
+                to="/contact" 
+                onClick={() => setOpen(false)}
                 className={`font-medium transition-colors ${
                     location.pathname === '/contact'
                       ? 'text-terracotta'
@@ -60,12 +121,7 @@ export default function Header() {
                     Contact
                 </Link>
               </div>
-
-              <div className="hamburger">
-                <Hamburger toggled={isOpen} toggle={setOpen}/>
-              </div>
             </nav>
-          </div>
       </div>
     </header>
   );

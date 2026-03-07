@@ -60,7 +60,7 @@ export default function Hero() {
       </div>
 
       {/* Company Logo Sliders */}
-      <div className="container mx-auto overflow-hidden">
+      <div className="w-full">
         <div className="slider mb-16">
           <div className="slide-track">
               {logos.concat(logos).map((logo, index) => (
