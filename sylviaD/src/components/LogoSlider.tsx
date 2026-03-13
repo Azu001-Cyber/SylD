@@ -1,5 +1,5 @@
 // LogoSlider.jsx
-import "../logoSlider.css";
+import "../css/logoSlider.css";
 
 const logos = [
     "/logos/google.png",

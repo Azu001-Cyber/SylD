@@ -9,7 +9,7 @@
 .slide-track {
   display: flex;
   width: calc(250px * 10); /* logo width × number of logos */
-  animation: scroll 20s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
 .slide {

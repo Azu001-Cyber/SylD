@@ -1,4 +1,5 @@
 import abtMe from "../assets/abtMe.jpg"
+import "../css/about.css"
 
 export default function About() {
   return (
@@ -11,8 +12,8 @@ export default function About() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-stretch">
-            <div className="order-2 md:order-1 flex flex-col justify-center">
-              <div className="prose prose-lg">
+            <div className="order-2 md:order-1 flex flex-col justify-center h-full">
+              <div className="prose prose-lg flex flex-col items-between gap-16 ">
                 <p className="text-brown-light leading-relaxed mb-6">
                   I started out as a freelance writer for a travel blog, and that one role quietly set everything else in motion. Writing led to editing, editing led to AI content humanisation, and that eventually led to managing content teams for several blogs.
                 </p>
@@ -25,16 +26,16 @@ export default function About() {
               </div>
             </div>
 
-            <div className="order-1 md:order-2 relative">
-              <div className="relative w-full aspect-[3/4]">
+            <div className="order-1 md:order-2 relative  abt-img-container">
+              {/* <div className="relative w-full"> */}
                 <img
                   src={abtMe}
                   alt="Professional portrait"
-                  className="w-full h-full rounded-2xl object-cover shadow-2xl overflow-clip"
+                  className="abt-img w-full h-full rounded-2xl object-cover shadow-2xl overflow-clip"
                 />
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-terracotta rounded-full opacity-20"></div>
                 <div className="absolute -top-6 -left-6 w-24 h-24 bg-gold rounded-full opacity-20"></div>
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>

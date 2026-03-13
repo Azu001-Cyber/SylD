@@ -36,3 +36,11 @@
 body{
   font-family: 'Times New Roman', Times, serif;
 }
+
+/* *{
+  border: 1px solid black;
+} */
+
+html{
+  scroll-behavior: smooth;
+}

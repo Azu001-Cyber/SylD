@@ -12,6 +12,12 @@ export default function Footer() {
           <span className=""> All rights reserved.</span>
           </p>
 
+          <div className="mt-5">
+            <ul className="flex items-center justify-center gap-5 font-semibold">
+              <li className="hover:text-terracotta text-terracotta md:text-brown"><a href=""></a>LinkedIn</li>
+              <li className="hover:text-terracotta text-terracotta md:text-brown"><a href=""></a>Upwork</li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
