@@ -66,8 +66,24 @@ export default function Header() {
             </Link>
 
             <Link
+              onClick={() => {
+                scrollTo("skills")
+                setOpen(false)
+              }}
+              to="/portfolio"
+              className={`font-medium transition-colors ${location.pathname === '/about'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}>
+
+              Project
+            </Link>
+
+            <Link
               to="/#contact"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                scrollTo('contact')
+                setOpen(false)}}
               className={`font-medium transition-colors ${location.pathname === '/contact'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
@@ -76,8 +92,9 @@ export default function Header() {
             </Link>
 
             <Link
-              to="/boc"
-              onClick={() => setOpen(false)}
+              to="/book-consultation"
+              onClick={() => 
+                setOpen(false)}
               className={`font-medium transition-colors ${location.pathname === '/about'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
@@ -95,7 +112,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         <nav className="flex items-center gap-8 md:hidden">
-          <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+          <div className={`nav-links ${isOpen ? 'open' : ''} p-3` }>
             <Link
               to="/"
               onClick={() => setOpen(false)}
@@ -108,7 +125,9 @@ export default function Header() {
             </Link>
             <Link
               to="#about"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                scrollTo('about')
+                setOpen(false)}}
               className={`font-medium transition-colors ${location.pathname === '/portfolio'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
@@ -119,7 +138,9 @@ export default function Header() {
 
             <Link
               to="/#skills"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                scrollTo('skills')
+                setOpen(false)}}
               className={`font-medium transition-colors ${location.pathname === '/about'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
@@ -128,8 +149,24 @@ export default function Header() {
             </Link>
 
             <Link
+              onClick={() => {
+                scrollTo("skills")
+                setOpen(false)
+              }}
+              to="/portfolio"
+              className={`font-medium transition-colors ${location.pathname === '/about'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}>
+
+              Project
+            </Link>
+
+            <Link
               to="/#contact"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                scrollTo('contact')
+                setOpen(false)}}
               className={`font-medium transition-colors ${location.pathname === '/contact'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
@@ -138,12 +175,12 @@ export default function Header() {
             </Link>
 
             <Link
-              to="/boc"
+              to="/book-consultation"
               onClick={() => setOpen(false)}
               className={`font-medium transition-colors ${location.pathname === '/about'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
-                }`}>
+                }` }>
               <span className='bg-terracotta text-white border rounded-full p-3'>Book a Consultation</span>
             </Link>
           </div>

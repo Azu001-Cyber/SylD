@@ -1,9 +1,16 @@
 
+// import avatar from '../assets/avatar.jpg'
 
-export default function BookConsultation() {
+const BookConsultation = () => {
+    // const handleBooking = () => {
+    // window.open("https://calendly.com/yourusername/consultation", "_self");
+    // };
+
     return (
-        <div>
+        <section className="">
             
-        </div>
+        </section>
     );
 };
+
+export default BookConsultation;

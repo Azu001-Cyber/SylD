@@ -38,13 +38,6 @@ body{
 }
 
 
-*{
-  border: 1px solid black;
-
-/* *{
-  border: 1px solid black;
-} */
-
 html{
   scroll-behavior: smooth;
 
