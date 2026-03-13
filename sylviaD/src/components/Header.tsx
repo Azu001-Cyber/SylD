@@ -1,8 +1,14 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Feather } from 'lucide-react';
-import { Spin as Hamburger} from 'hamburger-react';
+import { Spin as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
-import "../Header.css"
+import "../css/Header.css"
+
+const scrollTo = (id?: string) => {
+  const skillsSection = document.getElementById(id ?? '#');
+  skillsSection?.scrollIntoView({ behavior: 'smooth' });
+};
+
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
@@ -18,110 +24,130 @@ export default function Header() {
             <span className="text-xl font-bold text-brown">Sylvia Duruson</span>
           </Link>
 
-             {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
-           <Link
-                  to="/"
-                  onClick={() => setOpen(false)}
-                  className={`font-medium transition-colors ${
-                    location.pathname === '/'
-                      ? 'text-terracotta'
-                      : 'text-brown hover:text-terracotta'
-                  }`}
-                >
-                  Home
-                </Link>
-                <Link
-                  to="/portfolio"
-                  onClick={() => setOpen(false)}
-                  className={`font-medium transition-colors ${
-                    location.pathname === '/portfolio'
-                      ? 'text-terracotta'
-                      : 'text-brown hover:text-terracotta'
-                  }`}
-                >
-                  Project
-                </Link>
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-8">
+            <Link
+              to="/"
+              onClick={() => setOpen(false)}
+              className={`font-medium transition-colors ${location.pathname === '/'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}
+            >
+              Home
+            </Link>
 
-                <Link 
-                to="/about" 
-                onClick={() => setOpen(false)}
-                className={`font-medium transition-colors ${
-                    location.pathname === '/about'
-                      ? 'text-terracotta'
-                      : 'text-brown hover:text-terracotta'
-                  }`}>
-                    About
-                </Link>
+            <Link
+              to="/#about"
+              onClick={() => {
+                scrollTo("about")
+                setOpen(false)
+              }}
+              className={`font-medium transition-colors ${location.pathname === '/portfolio'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}
+            >
+              About
+            </Link>
 
-                <Link 
-                to="/contact" 
-                onClick={() => setOpen(false)}
-                className={`font-medium transition-colors ${
-                    location.pathname === '/contact'
-                      ? 'text-terracotta'
-                      : 'text-brown hover:text-terracotta'
-                  }`}>
-                    Contact
-                </Link>
-        </nav>
+            <Link
+              onClick={() => {
+                scrollTo("skills")
+                setOpen(false)
+              }}
+              to="/#skills"
+              className={`font-medium transition-colors ${location.pathname === '/about'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}>
+
+              Skills
+            </Link>
+
+            <Link
+              to="/#contact"
+              onClick={() => setOpen(false)}
+              className={`font-medium transition-colors ${location.pathname === '/contact'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}>
+              Contact
+            </Link>
+
+            <Link
+              to="/boc"
+              onClick={() => setOpen(false)}
+              className={`font-medium transition-colors ${location.pathname === '/about'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}>
+              <span className='bg-terracotta text-white border rounded-full p-3'>Book a Consultation</span>
+            </Link>
+          </nav>
 
 
-           <div className="hamburger md:hidden" aria-label='Toggle menu'>
-                <Hamburger toggled={isOpen} toggle={setOpen}/>
-            </div>
-
+          <div className="hamburger md:hidden" aria-label='Toggle menu'>
+            <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
-          
-            {/* Mobile Menu */}
-            <nav className="flex items-center gap-8 md:hidden">
-              <div className={`nav-links ${isOpen? 'open' : ''}`}>
-                <Link
-                  to="/"
-                  onClick={() => setOpen(false)}
-                  className={`font-medium transition-colors ${
-                    location.pathname === '/'
-                      ? 'text-terracotta'
-                      : 'text-brown hover:text-terracotta'
-                  }`}
-                >
-                  Home
-                </Link>
-                <Link
-                  to="/portfolio"
-                  onClick={() => setOpen(false)}
-                  className={`font-medium transition-colors ${
-                    location.pathname === '/portfolio'
-                      ? 'text-terracotta'
-                      : 'text-brown hover:text-terracotta'
-                  }`}
-                >
-                  Project
-                </Link>
 
-                <Link 
-                to="/about" 
-                onClick={() => setOpen(false)}
-                className={`font-medium transition-colors ${
-                    location.pathname === '/about'
-                      ? 'text-terracotta'
-                      : 'text-brown hover:text-terracotta'
-                  }`}>
-                    About
-                </Link>
+        </div>
 
-                <Link 
-                to="/contact" 
-                onClick={() => setOpen(false)}
-                className={`font-medium transition-colors ${
-                    location.pathname === '/contact'
-                      ? 'text-terracotta'
-                      : 'text-brown hover:text-terracotta'
-                  }`}>
-                    Contact
-                </Link>
-              </div>
-            </nav>
+        {/* Mobile Menu */}
+        <nav className="flex items-center gap-8 md:hidden">
+          <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+            <Link
+              to="/"
+              onClick={() => setOpen(false)}
+              className={`font-medium transition-colors ${location.pathname === '/'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}
+            >
+              Home
+            </Link>
+            <Link
+              to="#about"
+              onClick={() => setOpen(false)}
+              className={`font-medium transition-colors ${location.pathname === '/portfolio'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}
+            >
+              About
+            </Link>
+
+            <Link
+              to="/#skills"
+              onClick={() => setOpen(false)}
+              className={`font-medium transition-colors ${location.pathname === '/about'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}>
+              Skills
+            </Link>
+
+            <Link
+              to="/#contact"
+              onClick={() => setOpen(false)}
+              className={`font-medium transition-colors ${location.pathname === '/contact'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}>
+              Contact
+            </Link>
+
+            <Link
+              to="/boc"
+              onClick={() => setOpen(false)}
+              className={`font-medium transition-colors ${location.pathname === '/about'
+                ? 'text-terracotta'
+                : 'text-brown hover:text-terracotta'
+                }`}>
+              <span className='bg-terracotta text-white border rounded-full p-3'>Book a Consultation</span>
+            </Link>
+          </div>
+        </nav>
       </div>
     </header>
   );

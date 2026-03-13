@@ -1,6 +1,6 @@
 import { ChevronDown } from 'lucide-react'
 import avatar from '../assets/avatar.jpg'
-import "../logoSlider.css";
+import "../css/logoSlider.css";
 
 
 const logos = [
@@ -24,7 +24,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-cream-light via-cream to-cream-dark relative">
+    <section id="#" className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-cream-light via-cream to-cream-dark relative">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-64 h-64 border border-sage-light rounded-full"></div>
         <div className="absolute bottom-40 right-32 w-96 h-96 border border-terracotta-light rounded-full"></div>
