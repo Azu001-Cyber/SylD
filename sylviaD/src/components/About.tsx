@@ -25,16 +25,18 @@ export default function About() {
               </div>
             </div>
 
+            {/* Image div */}
             <div className="order-1 md:order-2 relative">
               <div className="relative w-full aspect-[3/4]">
                 <img
                   src={abtMe}
                   alt="Professional portrait"
-                  className="w-full h-full rounded-2xl object-cover shadow-2xl overflow-clip"
+                  className="w-full h- rounded-2xl object-cover shadow-2xl overflow-clip"
                 />
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-terracotta rounded-full opacity-20"></div>
                 <div className="absolute -top-6 -left-6 w-24 h-24 bg-gold rounded-full opacity-20"></div>
               </div>
+  
             </div>
           </div>
         </div>
