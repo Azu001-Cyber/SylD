@@ -1,7 +1,11 @@
+
+// Importing Reusable components
 import HeroExperiance from '../components/HeroExperiance'
 import WhatIDoCard from '../components/Whatido';
 import MyProcess from "../components/MyProcessExperiance"
-import { HiCursorClick } from 'react-icons/hi';
+import WhyChooseMeCard from '../components/WhyChooseMe';
+
+import { MousePointer, CheckCircleIcon } from 'lucide-react';
 import {BarChart3, Calendar, BrainCircuit,  UserCog, Headphones} from 'lucide-react';
 import {Link} from "react-router-dom"
 
@@ -55,36 +59,38 @@ import {Link} from "react-router-dom"
 const ContentWriter = () => {
     return(
         <section className='min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-cream-light via-cream to-cream-dark relative'>
-            <div className='container px-6 py-6 max-w-3xl'>
+            {/* Hero Section */}
+            <div className='container px-6 py-6 max-w-3xl md:max-w-xl'>
                 <HeroExperiance>
-                    <h1 className='text-terracotta-light'>MY SPECIALIZATION</h1>
-                    <p className='text-black font-bold'>Content Writing</p>
-                    <p>Elevating your brand's digital presence through strategic, high-quality
+                    <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
+                    <p className='text-black font-bold text-5xl mb-3 font-serif'>Content Writing</p>
+                    <p className='text-gray-500'>Elevating your brand's digital presence through strategic, high-quality
                         content that resonates with your audience and drive organic growth.
                     </p>
                 </HeroExperiance>
             </div>
 
-            <div className='container mx-auto px-6 py-6'>
+            {/* What i do */}
+            <div className='mx-auto px-6 py-10 w-full'>
                 <div className="max-w-3xl mx-auto">
-                    <div className="text-center mb-16">
-                        <h2 className='text-xl md:text-2xl font-bold text-brown mb-4'>
+                    <div className="text-center py-10 text-black">
+                        <h2 className='text-2xl md:text-4xl'>
                         What I Do
                         </h2>
                     </div> 
-                    <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start '>
+                    <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
                         <WhatIDoCard
-                        icon={<HiCursorClick/>}
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Narrative Storytelling'}
                         description={'Engaging readers with compelling brand stories and clear messaging'}
                         />
                         <WhatIDoCard
-                        icon={<HiCursorClick/>}
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
                         title={'SEO Strategy'}
                         description={'Engaging readers with compelling brand stories and clear messaging'}
                         />
                         <WhatIDoCard
-                        icon={<HiCursorClick/>}
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Website Copywriting'}
                         description={'Engaging readers with compelling brand stories and clear messaging'}
                         />
@@ -93,9 +99,10 @@ const ContentWriter = () => {
                 </div>
             </div>
 
-            <div className=' container max-w-5xl mx-auto px-6 py-6'>
+            {/* My Process */}
+            <div className=' container max-w-5xl mx-auto px-6 py-10'>
                 <div className='text-center py-10 text-black'>
-                    <h2 className='text-2xl'>My Process</h2>
+                    <h2 className='text-2xl md:text-4xl'>My Process</h2>
                 </div>
                 <div className='grid gird-cols-1 md:grid-cols-3 gap-10 text-center'>
                     <MyProcess
@@ -116,15 +123,13 @@ const ContentWriter = () => {
                 </div>
 
             </div>
-
-            <div className="container mx-auto py-6 px-6">
+            {/* Other Services */}
+            <div className="container mx-auto py-10 px-6">
                 <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-16">
-                        <h2 className="text-xl md:text-2xl font-bold text-brown mb-4">
+                    <div className="text-center py-10 text-black">
+                        <h2 className="text-2xl md:text-4xl">
                         Other Services I Offer
                         </h2>
-                        <p className="text-xl text-brown-light">
-                        </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -147,6 +152,41 @@ const ContentWriter = () => {
                         ))}
                     </div>
                     </div>
+            </div>
+
+            {/* Project / Recent Work */}
+            {/*  */}
+
+            {/* Why Partners Choose Me */}
+            <div className='bg-cream-dark w-full px-6 py-10 '>
+                <div className='max-w-3xl mx-auto'>
+                    <div className='text-center py-10'>
+                        <h2 className='text-2xl md:text-4xl text-black'>Why Partners Choose Me</h2>
+                    </div>
+
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+                        <WhyChooseMeCard
+                        icon={<CheckCircleIcon className='text-terracotta'/>}
+                        title={'Strong Communication'}
+                        description={'Responsive to feedback, communicate, and collaborate seamlessly'}/>
+
+                        <WhyChooseMeCard
+                        icon={<CheckCircleIcon className='text-terracotta'/>}
+                        title={'Expectise & Experience'}
+                        description={'Understanding industry trends to deliver solutions that are effective, professional, and results-driven.'}/>
+
+                        <WhyChooseMeCard
+                        icon={<CheckCircleIcon className='text-terracotta'/>}
+                        title={'Innovative Solutions'}
+                        description={'Creating approach that combines creativity, strategy, and technology to offer unique solutions.'}/>
+
+                        <WhyChooseMeCard
+                        icon={<CheckCircleIcon className='text-terracotta'/>}
+                        title={'Reliable Deadlines'}
+                        description={'Ensuring all content projects are delivered promptly and reliably'}/>
+                    </div>
+
+                </div>
             </div>
         </section>
     )

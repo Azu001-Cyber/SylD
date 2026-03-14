@@ -99,7 +99,7 @@ export default function Header() {
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
                 }`}>
-              <span className='bg-terracotta text-white border rounded-full p-3'>Book a Consultation</span>
+              <span className='bg-terracotta text-white border border-terracotta-dark hover:bg-terracotta-dark hover:border-terracotta-light transition duration-500 hover:scale-105 ease-in-out shadow-sm rounded-full p-3 hover:text-cream-dark'>Book a Consultation</span>
             </Link>
           </nav>
 
@@ -181,7 +181,7 @@ export default function Header() {
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
                 }` }>
-              <span className='bg-terracotta text-white border rounded-full p-3'>Book a Consultation</span>
+              <span className='bg-terracotta text-white border border-terracotta-dark hover:bg-terracotta-dark hover:border-terracotta-light transition duration-300 hover:scale-105 ease-in-out shadow-sm rounded-full p-3'>Book a Consultation</span>
             </Link>
           </div>
         </nav>

@@ -16,6 +16,8 @@ export default {
         },
         terracotta: {
           DEFAULT: '#C86F3B',
+          extralight: '#F0C0A6',
+          verylight: '#F7DED1',
           light: '#DC8F5E',
           dark: '#A95827',
         },
