@@ -1,11 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './pages/Home';
-import PortfolioPage from './pages/PortfolioPage';
 import ContactButton from './components/ContactButton';
 import Footer from './components/Footer';
+
+import PortfolioPage from './pages/PortfolioPage';
+import Home from './pages/Home';
+import AiEditing from './pages/AiEditing';
 import Consultation from './pages/Consultation';
 import ContentWriter from './pages/ContentWriter'
+
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/book-consultation" element={<Consultation/>}></Route>
             <Route path="/skills/writing" element={<ContentWriter/>}></Route>
+            <Route path="/skills/ai_editing" element={<AiEditing/>}/>
           </Routes>
         </main>
         <Footer />

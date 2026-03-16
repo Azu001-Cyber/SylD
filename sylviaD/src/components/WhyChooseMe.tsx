@@ -1,7 +1,16 @@
+import React from "react";
 
+type Props = {
+    icon?: React.ReactNode;
+    title: string;
+    description: string;
+}
 
-
-export default function WhyChooseMeCard({icon, title, description}){
+export default function WhyChooseMeCard({
+    icon, 
+    title, 
+    description
+}:Props){
     return (
         <div>
             <div className="flex gap-3">

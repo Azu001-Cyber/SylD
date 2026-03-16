@@ -23,7 +23,7 @@ const skills: Skill[] = [
     color: 'sage'
   },
   {
-    id: 'editing',
+    id: 'ai_editing',
     title: 'AI Content Editing',
     icon: <BrainCircuit className="w-8 h-8" />,
     color: 'brown'
