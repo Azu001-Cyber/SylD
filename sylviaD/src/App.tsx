@@ -10,6 +10,7 @@ import Consultation from './pages/Consultation';
 import ContentWriter from './pages/ContentWriter'
 
 
+
 function App() {
   return (
     <Router>
@@ -19,8 +20,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/book-consultation" element={<Consultation/>}></Route>
-            <Route path="/skills/writing" element={<ContentWriter/>}></Route>
+            <Route path="/book-consultation" element={<Consultation/>}/>
+            <Route path="/skills/writing" element={<ContentWriter/>}/>
             <Route path="/skills/ai_editing" element={<AiEditing/>}/>
           </Routes>
         </main>
