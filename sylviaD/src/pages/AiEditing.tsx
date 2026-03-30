@@ -7,7 +7,7 @@ import WhyChooseMeCard from '../components/WhyChooseMe';
 import RecentWorkProjectCard from '../components/RecentWork';
 
 import { MousePointer, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
-import {BarChart3, Calendar, BrainCircuit,  UserCog, Headphones} from 'lucide-react';
+import {BarChart3, Calendar, Feather, UserCog, Headphones} from 'lucide-react';
 import {Link} from "react-router-dom"
 
 
@@ -19,24 +19,24 @@ import {Link} from "react-router-dom"
     }
 
     const skills: Skill[] = [
-    // {
-    //     id: 'writing',
-    //     title: 'Content Writing',
-    //     icon: <Feather className="w-8 h-8" />,
-    //     color: 'terracotta'
-    // },
+    {
+        id: 'writing',
+        title: 'Content Writing',
+        icon: <Feather className="w-8 h-8" />,
+        color: 'terracotta'
+    },
     {
         id: 'data_entry',
         title: 'Data Entry',
         icon: <BarChart3 className="w-8 h-8" />,
         color: 'sage'
     },
-    {
-        id: 'writng',
-        title: 'Content Writing',
-        icon: <BrainCircuit className="w-8 h-8" />,
-        color: 'brown'
-    },
+    // {
+    //     id: 'ai_writing',
+    //     title: 'Content Writing',
+    //     icon: <BrainCircuit className="w-8 h-8" />,
+    //     color: 'brown'
+    // },
     {
         id: 'blog-management',
         title: 'Blog & Content Management',
@@ -50,7 +50,7 @@ import {Link} from "react-router-dom"
         color: 'sage'
     },
     {
-        id: 'hr/admin_assistant',
+        id: 'hr-admin-assistant',
         title: 'HR / Admin Assistant',
         icon: <UserCog className="w-8 h-8" />,
         color: 'sage'
@@ -145,7 +145,7 @@ const AiEditing = () => {
                                 {skill.icon}
                                 </div>
 
-                                <h3 className="text-xl font-semibold text-brown mb-2">
+                                <h3 className="text-xl font-semibold text-brown mb-2 text-nowrap">
                                 {skill.title}
                                 </h3>
                                 <p className='text-sm font-medium text-slate-light mt-2 transition-colors duration-300 group-hover:text-terracotta'>Click to explore my experiance</p>

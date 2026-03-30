@@ -41,7 +41,7 @@ const skills: Skill[] = [
     color: 'sage'
   },
   {
-    id: 'hr/admin_assistant',
+    id: 'hr-admin-assistant',
     title: 'HR / Admin Assistant',
     icon: <UserCog className="w-8 h-8" />,
     color: 'sage'
@@ -71,7 +71,7 @@ export default function Skills() {
                       {skill.icon}
                     </div>
 
-                    <h3 className="text-xl font-semibold text-brown mb-2">
+                    <h3 className="text-xl font-semibold text-brown mb-2 text-nowrap">
                       {skill.title}
                     </h3>
                     <p className='text-sm font-medium text-slate-light mt-2 transition-colors duration-300 group-hover:text-terracotta'>Click to explore my experiance</p>

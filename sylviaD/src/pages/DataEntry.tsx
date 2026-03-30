@@ -7,7 +7,7 @@ import WhyChooseMeCard from '../components/WhyChooseMe';
 import RecentWorkProjectCard from '../components/RecentWork';
 
 import { MousePointer, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
-import {BarChart3, Calendar, BrainCircuit,  UserCog, Headphones} from 'lucide-react';
+import {Calendar, BrainCircuit,  UserCog, Headphones, Feather} from 'lucide-react';
 import {Link} from "react-router-dom"
 
 
@@ -19,23 +19,23 @@ import {Link} from "react-router-dom"
     }
 
     const skills: Skill[] = [
+    {
+        id: 'writing',
+        title: 'Content Writing',
+        icon: <Feather className="w-8 h-8" />,
+        color: 'terracotta'
+    },
     // {
-    //     id: 'writing',
-    //     title: 'Content Writing',
-    //     icon: <Feather className="w-8 h-8" />,
-    //     color: 'terracotta'
+    //     id: 'data_entry',
+    //     title: 'Data Entry',
+    //     icon: <BarChart3 className="w-8 h-8" />,
+    //     color: 'sage'
     // },
     {
-        id: 'data_entry',
-        title: 'Data Entry',
-        icon: <BarChart3 className="w-8 h-8" />,
-        color: 'sage'
-    },
-    {
-        id: 'editing',
-        title: 'AI Content Editing',
-        icon: <BrainCircuit className="w-8 h-8" />,
-        color: 'brown'
+    id: 'ai_editing',
+    title: 'AI Content Editing',
+    icon: <BrainCircuit className="w-8 h-8" />,
+    color: 'brown'
     },
     {
         id: 'blog-management',
@@ -57,16 +57,16 @@ import {Link} from "react-router-dom"
     }
 ];
 
-const ContentWriter = () => {
+const  DataEntry = () => {
     return(
         <section className='min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-cream-light via-cream to-cream-dark relative'>
             {/* Hero Section */}
             <div className='container px-6 py-20 max-w-3xl md:max-w-xl'>
                 <HeroExperiance>
                     <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
-                    <p className='text-black font-bold text-5xl mb-3 font-serif'>Content Writing</p>
-                    <p className='text-gray-500'>Elevating your brand's digital presence through strategic, high-quality
-                        content that resonates with your audience and drive organic growth.
+                    <p className='text-black font-bold text-5xl mb-3 font-serif'>Data Entry</p>
+                    <p className='text-gray-500'> Transforming raw AI output into high-quality, 
+                        human-centric content that resonates with your brand voice and passes the toughest scrutiny.
                     </p>
                 </HeroExperiance>
             </div>
@@ -109,17 +109,17 @@ const ContentWriter = () => {
                 <div className='grid gird-cols-1 md:grid-cols-3 gap-10 text-center'>
                     <MyProcess
                     label={'1'}
-                    title={'Discovery'}
+                    title={'Scan'}
                     description={'Deep dive into goals, audience, and brand voice requirements'}
                     />
                     <MyProcess
                     label={'2'}
-                    title={'Discovery'}
+                    title={'Verify'}
                     description={'Deep dive into goals, audience, and brand voice requirements'}
                     />
                     <MyProcess 
                     label={'3'}
-                    title={'Discovery'}
+                    title={'Polish'}
                     description={'Deep dive into goals, audience, and brand voice requirements'}
                     />
                 </div>
@@ -233,4 +233,4 @@ const ContentWriter = () => {
 
 }
 
-export default ContentWriter;
+export default DataEntry;
