@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
 import Header from './components/Header';
 import ContactButton from './components/ContactButton';
 import Footer from './components/Footer';
@@ -25,7 +27,7 @@ function App() {
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/book-consultation" element={<Consultation/>}/>
             <Route path="/skills/writing" element={<ContentWriter/>}/>
-            <Route path="/skills/ai_editing" element={<AiEditing/>}/>
+            <Route path="/skills/ai-editing" element={<AiEditing/>}/>
             <Route path="/skills/data_entry" element={<DataEntry/>}/>
             <Route path="/skills/blog-management" element={<BlogandContentManagement/>}/>
             <Route path="skills/customer-support" element={<CustomerService/>}/>

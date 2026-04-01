@@ -9,7 +9,7 @@ import RecentWorkProjectCard from '../components/RecentWork';
 import { MousePointer, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
 import {BarChart3, Calendar, Feather, UserCog, Headphones} from 'lucide-react';
 import {Link} from "react-router-dom"
-
+import { useEffect } from 'react';
 
     interface Skill {
     id: string;
@@ -31,12 +31,6 @@ import {Link} from "react-router-dom"
         icon: <BarChart3 className="w-8 h-8" />,
         color: 'sage'
     },
-    // {
-    //     id: 'ai_writing',
-    //     title: 'Content Writing',
-    //     icon: <BrainCircuit className="w-8 h-8" />,
-    //     color: 'brown'
-    // },
     {
         id: 'blog-management',
         title: 'Blog & Content Management',
@@ -58,6 +52,9 @@ import {Link} from "react-router-dom"
 ];
 
 const AiEditing = () => {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
     return(
         <section className='min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-cream-light via-cream to-cream-dark relative'>
             {/* Hero Section */}

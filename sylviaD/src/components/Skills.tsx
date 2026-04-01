@@ -1,7 +1,6 @@
 
 import { Feather, BarChart3, Calendar, BrainCircuit,  UserCog, Headphones} from 'lucide-react';
 import {Link} from "react-router-dom"
-
 interface Skill {
   id: string;
   title: string;
@@ -23,7 +22,7 @@ const skills: Skill[] = [
     color: 'sage'
   },
   {
-    id: 'ai_editing',
+    id: 'ai-editing',
     title: 'AI Content Editing',
     icon: <BrainCircuit className="w-8 h-8" />,
     color: 'brown'
@@ -49,6 +48,7 @@ const skills: Skill[] = [
 ];
 
 export default function Skills() {
+
   return (
     <section id="skills" className="py-24 bg-cream">
       <div className="container mx-auto px-6">

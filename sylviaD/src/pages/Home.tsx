@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Hero />
-      <About />
+      <About/>
 
       <section className="py-12 bg-cream">
         <div className="container mx-auto px-6 text-center">

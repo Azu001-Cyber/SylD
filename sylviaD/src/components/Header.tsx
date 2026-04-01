@@ -3,6 +3,7 @@ import { Feather } from 'lucide-react';
 import { Spin as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 import "../css/Header.css"
+import { HashLink } from 'react-router-hash-link';
 
 const scrollTo = (id?: string) => {
   const skillsSection = document.getElementById(id ?? '#');
@@ -37,37 +38,30 @@ export default function Header() {
               Home
             </Link>
 
-            <Link
+            <HashLink
               to="/#about"
-              onClick={() => {
-                scrollTo("about")
-                setOpen(false)
-              }}
+              onClick={() => setOpen(false)}
               className={`font-medium transition-colors ${location.pathname === '/portfolio'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
                 }`}
             >
               About
-            </Link>
+            </HashLink>
 
-            <Link
-              onClick={() => {
-                scrollTo("skills")
-                setOpen(false)
-              }}
+            <HashLink
               to="/#skills"
+              onClick={() => setOpen(false)}
               className={`font-medium transition-colors ${location.pathname === '/about'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
                 }`}>
 
               Skills
-            </Link>
+            </HashLink>
 
             <Link
               onClick={() => {
-                scrollTo("skills")
                 setOpen(false)
               }}
               to="/portfolio"
@@ -79,17 +73,15 @@ export default function Header() {
               Project
             </Link>
 
-            <Link
+            <HashLink
               to="/#contact"
-              onClick={() => {
-                scrollTo('contact')
-                setOpen(false)}}
+              onClick={() => setOpen(false)}
               className={`font-medium transition-colors ${location.pathname === '/contact'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
                 }`}>
               Contact
-            </Link>
+            </HashLink>
 
             <Link
               to="/book-consultation"
@@ -123,30 +115,26 @@ export default function Header() {
             >
               Home
             </Link>
-            <Link
+            <HashLink
               to="#about"
-              onClick={() => {
-                scrollTo('about')
-                setOpen(false)}}
+              onClick={() => setOpen(false)}
               className={`font-medium transition-colors ${location.pathname === '/portfolio'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
                 }`}
             >
               About
-            </Link>
+            </HashLink>
 
-            <Link
+            <HashLink
               to="/#skills"
-              onClick={() => {
-                scrollTo('skills')
-                setOpen(false)}}
+              onClick={() => setOpen(false)}
               className={`font-medium transition-colors ${location.pathname === '/about'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
                 }`}>
               Skills
-            </Link>
+            </HashLink>
 
             <Link
               onClick={() => {
@@ -162,17 +150,15 @@ export default function Header() {
               Project
             </Link>
 
-            <Link
+            <HashLink
               to="/#contact"
-              onClick={() => {
-                scrollTo('contact')
-                setOpen(false)}}
+              onClick={() => setOpen(false)}
               className={`font-medium transition-colors ${location.pathname === '/contact'
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
                 }`}>
               Contact
-            </Link>
+            </HashLink>
 
             <Link
               to="/book-consultation"
