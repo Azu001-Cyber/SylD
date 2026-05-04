@@ -52,7 +52,7 @@ import { useEffect } from 'react';
     },
     {
         id: 'hr-admin-assistant',
-        title: 'HR / Admin Assistant',
+        title: 'HR & Admin Assistant',
         icon: <UserCog className="w-8 h-8" />,
         color: 'sage'
     }
@@ -69,15 +69,14 @@ const  BlogandContentManagement = () => {
                 <HeroExperiance>
                     <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
                     <p className='text-black font-bold text-5xl mb-3 font-serif'>Blog & Content Management</p>
-                    <p className='text-gray-500'> Transforming raw AI output into high-quality, 
-                        human-centric content that resonates with your brand voice and passes the toughest scrutiny.
+                    <p className='text-gray-500'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur minus pariatur sint aspernatur. Recusandae earum facere omnis aut voluptatum mollitia facilis, quibusdam debitis ipsa provident dignissimos amet! Minima, ex natus!
                     </p>
                 </HeroExperiance>
             </div>
 
             {/* What i do */}
             <div className='mx-auto px-6 py-20 w-full bg-cream-light'>
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <div className="text-center py-10 text-black">
                         <h2 className='text-2xl md:text-4xl pb-3'>
                         What I Do
@@ -87,45 +86,72 @@ const  BlogandContentManagement = () => {
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
                         <WhatIDoCard
                         icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'Narrative Storytelling'}
-                        description={'Engaging readers with compelling brand stories and clear messaging'}
+                        title={'Editorial Pipeline Management'}
+                        description={"Overseeing the full content production cycle from story ideation and assignment through to final publication, ensuring each piece progresses through every stage on schedule and to the required standard without disruption to the broader pipeline."}
                         />
                         <WhatIDoCard
                         icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'SEO Strategy'}
-                        description={'Engaging readers with compelling brand stories and clear messaging'}
+                        title={'Story Assignment and Commissioning'}
+                        description={"Identifying topics of relevance, timeliness, and editorial fit, assigning them to writers accordingly, and evaluating pitches submitted by the team against publication scope and newsworthiness to determine what proceeds to production."}
                         />
                         <WhatIDoCard
                         icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'Website Copywriting'}
-                        description={'Engaging readers with compelling brand stories and clear messaging'}
+                        title={'Draft Review and Structured Feedback'}
+                        description={"Conducting thorough reviews of submitted drafts across accuracy, clarity, tone, structure, and overall quality, and delivering detailed, actionable feedback that provides writers with a clear and specific path to improvement prior to resubmission."}
                         />
+                        <WhatIDoCard 
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        title={"SEO and Pre-Publication Optimization "}
+                        description={"Managing the final editorial layer before publication, encompassing SEO optimization, internal and external linking, meta title and description writing, header tag review, image sourcing and alt text, and full WordPress formatting."}/>
+                        
+                        <WhatIDoCard 
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        title={"Content Scheduling and Calendar Management"}
+                        description={"Coordinating publication timelines across multiple pieces simultaneously, scheduling content in alignment with the editorial calendar, and sustaining consistent output without disruption to the publication's cadence or standards."}/>
+
+                        <WhatIDoCard 
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        title={"Team Coordination and Communication"}
+                        description={"Maintaining clear and proactive communication with writers, editors, and publication owners throughout the pipeline, flagging potential delays or issues in advance, and ensuring all relevant parties remain informed of progress and any adjustments to timelines."}/>
                     </div>
 
                 </div>
             </div>
 
             {/* My Process */}
-            <div className=' container max-w-5xl mx-auto px-6 py-10'>
+            <div className=' container max-w-6xl mx-auto px-6 py-10'>
                 <div className='text-center py-10 text-black'>
                     <h2 className='text-2xl md:text-4xl'>My Process</h2>
                 </div>
                 <div className='grid gird-cols-1 md:grid-cols-3 gap-10 text-center'>
                     <MyProcess
                     label={'1'}
-                    title={'Scan'}
-                    description={'Deep dive into goals, audience, and brand voice requirements'}
+                    title={'Planning and Assignment '}
+                    description={"Reviewing the publication's editorial scope and existing coverage to identify gaps and opportunities, then assigning topics to writers based on relevance, newsworthiness, and individual capability. Writer-submitted pitches are evaluated against editorial standards and either approved or declined with appropriate justification before production commences."}
                     />
                     <MyProcess
                     label={'2'}
-                    title={'Verify'}
-                    description={'Deep dive into goals, audience, and brand voice requirements'}
+                    title={'Draft Review'}
+                    description={'Conducting a thorough assessment of each submitted draft across multiple dimensions: factual accuracy, structural integrity, tonal consistency, clarity of argument, and overall readability. Where deficiencies are identified, specific and structured feedback is provided rather than generalized observations.'}
                     />
                     <MyProcess 
                     label={'3'}
-                    title={'Polish'}
-                    description={'Deep dive into goals, audience, and brand voice requirements'}
+                    title={'Revision and Resubmission'}
+                    description={'Returning feedback to the writer with clear direction, reviewing the revised draft upon resubmission, and confirming that all notes have been addressed to the required standard before the piece advances to the subsequent stage of the pipeline.'}
                     />
+                    <MyProcess 
+                    label={'4'}
+                    title={"Final Optimization "}
+                    description={"Taking each approved draft through the complete pre-publication process: SEO optimization, keyword and header tag review, internal and external link insertion, image sourcing and alt text application, meta title and description writing, and WordPress formatting and layout review."}/>
+                    <MyProcess 
+                    label={'5'}
+                    title={"Publishing and Scheduling"}
+                    description={"Scheduling or publishing each completed piece in accordance with the editorial calendar, conducting a final front-end review to confirm formatting integrity, and updating the content tracker to accurately reflect the piece's status within the pipeline."}/>
+                    <MyProcess 
+                    label={'6'}
+                    title={"Pipeline Oversight"}
+                    description={"Maintaining consistent visibility across all active pieces at every stage of production, identifying any items at risk of missing their deadline, and intervening proactively to sustain pipeline momentum without disruption to the broader publication schedule."}/>
+               
                 </div>
             </div>
 
@@ -211,23 +237,33 @@ const  BlogandContentManagement = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Strong Communication'}
-                        description={'Responsive to feedback, communicate, and collaborate seamlessly'}/>
+                        title={'End-to-End Ownership'}
+                        description={'The content pipeline is managed in its entirety, from the initial brief through to the final published piece. Nothing is handed off incomplete, and nothing proceeds to publication without passing through a rigorous final review. The process is owned comprehensively, not merely supervised.'}/>
 
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Expectise & Experience'}
-                        description={'Understanding industry trends to deliver solutions that are effective, professional, and results-driven.'}/>
+                        title={'Editorially Rigorous'}
+                        description={'Feedback provided to writers is specific, structured, and directly actionable. Precise editorial direction produces more efficient revisions and measurably improves the quality of subsequent drafts, which benefits the pipeline as a whole.'}/>
 
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Innovative Solutions'}
-                        description={'Creating approach that combines creativity, strategy, and technology to offer unique solutions.'}/>
+                        title={'SEO Integrated Throughout '}
+                        description={'On-page SEO is not approached as a supplementary task appended at the end of the process. It is embedded within the editorial and publishing workflow so that every piece published is optimized across structure, body content, and metadata from the outset.'}/>
 
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Reliable Deadlines'}
-                        description={'Ensuring all content projects are delivered promptly and reliably'}/>
+                        title={'Proactive Communication'}
+                        description={"In a remote editorial environment, the quality of communication directly determines whether a pipeline operates smoothly or stalls. Issues are flagged before they escalate, stakeholders are kept informed throughout production, and expectations are managed with clarity and consistency."}/>
+
+                        <WhyChooseMeCard
+                        icon={<CheckCircleIcon className='text-terracotta'/>}
+                        title={'Consistent Output at Scale'}
+                        description={'Editorial pipelines covering a broad range of topics across multiple publications have been managed simultaneously, sustaining consistent quality and publication cadence without any compromise to output standards at volume.'}/>
+
+                        <WhyChooseMeCard
+                        icon={<CheckCircleIcon className='text-terracotta'/>}
+                        title={'Reliable Without Supervision '}
+                        description={'Deadlines are met, quality is maintained, and work that has been delegated does not require follow-up. That degree of reliability is foundational to a content operation that functions sustainably and at a consistently high standard.'}/>
                     </div>
 
                 </div>

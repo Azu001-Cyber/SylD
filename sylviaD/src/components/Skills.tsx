@@ -41,7 +41,7 @@ const skills: Skill[] = [
   },
   {
     id: 'hr-admin-assistant',
-    title: 'HR / Admin Assistant',
+    title: 'HR & Admin Assistant',
     icon: <UserCog className="w-8 h-8" />,
     color: 'sage'
   }

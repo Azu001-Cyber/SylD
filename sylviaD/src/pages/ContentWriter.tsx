@@ -52,7 +52,7 @@ import { useEffect } from 'react';
     },
     {
         id: 'hr-admin-assistant',
-        title: 'HR / Admin Assistant',
+        title: 'HR & Admin Assistant',
         icon: <UserCog className="w-8 h-8" />,
         color: 'sage'
     }
@@ -70,15 +70,16 @@ const ContentWriter = () => {
                 <HeroExperiance>
                     <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
                     <p className='text-black font-bold text-5xl mb-3 font-serif'>Content Writing</p>
-                    <p className='text-gray-500'>Elevating your brand's digital presence through strategic, high-quality
-                        content that resonates with your audience and drive organic growth.
+                    <p className='text-gray-500'>Long-Form Content Researching and writing in-depth articles, 
+                        destination guides, and editorial pieces that go beyond surface-level
+                         information to give readers something genuinely useful and worth reading.
                     </p>
                 </HeroExperiance>
             </div>
 
             {/* What i do */}
             <div className='mx-auto px-6 py-20 w-full bg-cream-light'>
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <div className="text-center py-10 text-black">
                         <h2 className='text-2xl md:text-4xl pb-3'>
                         What I Do
@@ -88,45 +89,72 @@ const ContentWriter = () => {
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
                         <WhatIDoCard
                         icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'Narrative Storytelling'}
-                        description={'Engaging readers with compelling brand stories and clear messaging'}
+                        title={'SEO Content Writing'}
+                        description={'Producing keyword-optimized articles with proper header structure, natural keyword placement, and formatting built for both readers and search engines from the ground up.'}
                         />
                         <WhatIDoCard
                         icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'SEO Strategy'}
-                        description={'Engaging readers with compelling brand stories and clear messaging'}
+                        title={'Travel Writing '}
+                        description={'Covering specific destinations, activities, and attractions in detail, researching each one independently to surface what makes a place worth visiting, and giving readers the context to make real decisions.'}
                         />
                         <WhatIDoCard
                         icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'Website Copywriting'}
-                        description={'Engaging readers with compelling brand stories and clear messaging'}
+                        title={'Tech and News Writing'}
+                        description={'Covering developments across industries, including African tech, entertainment, and global news, identifying what is worth covering, researching thoroughly, and delivering clean, accurate copy on deadline.'}
                         />
-                    </div>
+                        <WhatIDoCard
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        title={'Multi-Niche Writing '}
+                        description={'Writing across travel, tech, entertainment, food, cybersecurity, events, and decoration, adapting tone, voice, and research approach to fit each subject area and the audience it speaks to.'}
+                        />
+                        <WhatIDoCard
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        title={'Copywriting '}
+                        description={'Writing conversion-focused copy for tour and experience listings, translating inclusions and itineraries into benefit-driven lines that give travelers a concrete reason to book.'}
+                        />
+                        <WhatIDoCard
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        title={'Client and Freelance Work'}
+                        description={'Taking on individual client briefs across different industries, interpreting requirements accurately, delivering drafts, incorporating feedback, and managing the full writing process independently from brief to final submission.'}
+                        />
 
+                    </div>
+                    
                 </div>
             </div>
 
             {/* My Process */}
-            <div className=' container max-w-5xl mx-auto px-6 py-10'>
+            <div className=' container max-w-6xl mx-auto px-6 py-10'>
                 <div className='text-center py-10 text-black'>
                     <h2 className='text-2xl md:text-4xl'>My Process</h2>
                 </div>
                 <div className='grid gird-cols-1 md:grid-cols-3 gap-10 text-center'>
                     <MyProcess
                     label={'1'}
-                    title={'Discovery'}
-                    description={'Deep dive into goals, audience, and brand voice requirements'}
+                    title={'Research'}
+                    description={'Before anything is written, I go deep into the brief, the topic, and the target audience. For destination content, that means building out a full list of activities and attractions and researching each one independently. For news and niche content, it means identifying the right angle, finding credible sources, and gathering everything needed to write with authority.'}
                     />
                     <MyProcess
                     label={'2'}
-                    title={'Discovery'}
-                    description={'Deep dive into goals, audience, and brand voice requirements'}
+                    title={'Structure and Write'}
+                    description={'Organizing all research into a logical, readable flow with proper header hierarchy, clear transitions between sections, and content that holds up at length without padding or repetition. The structure is built to serve both the reader and the search engine.'}
                     />
                     <MyProcess 
                     label={'3'}
-                    title={'Discovery'}
-                    description={'Deep dive into goals, audience, and brand voice requirements'}
+                    title={'Optimize'}
+                    description={'Incorporating target keywords naturally throughout the body, applying proper header tags, and checking keyword density so SEO requirements are met without the content feeling forced or mechanical'}
                     />
+                    <MyProcess 
+                    label={'4'}
+                    title={'Refine and Self-Edit'}
+                    description={"Reading through the full piece before submission to check for accuracy, flow, clarity, and consistency. Cutting anything that doesn't add value, tightening sentences, and making sure the final draft is clean and publication-ready."}
+                    />
+                     <MyProcess 
+                    label={'5'}
+                    title={'Incorporate Feedback'}
+                    description={'Receiving client or editor notes, implementing revisions accurately, and returning a corrected draft promptly. Managing that cycle professionally is part of delivering work that actually serves the client.'}
+                    />
+                    
                 </div>
             </div>
 
@@ -174,7 +202,7 @@ const ContentWriter = () => {
                             <p className='text-gray-500'>A glimpse into content delivered for clients.</p>
                             <Link to={'portfolio'}
                             className='whitespace-nowrap flex items-center gap-2 text-terracotta-dark transition duration-700 ease-in-out hover:underline animate-pulse'>
-                                View All Projects<ArrowBigRight className=''/>
+                                View all Projects<ArrowBigRight className=''/>
                             </Link>
                         </div>
                     </div>
@@ -212,25 +240,34 @@ const ContentWriter = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Strong Communication'}
-                        description={'Responsive to feedback, communicate, and collaborate seamlessly'}/>
+                        title={'Depth Over Surface '}
+                        description={"I don't recycle obvious information. Whether it's a 4,000-word travel guide or a 1,000-word niche article, every piece is built on real research that gives readers something worth reading."}/>
 
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Expectise & Experience'}
-                        description={'Understanding industry trends to deliver solutions that are effective, professional, and results-driven.'}/>
+                        title={'Adaptable Across Niches '}
+                        description={"I've written across enough industries and formats that I can orient quickly to a new subject area, match the tone a client needs, and produce content that feels credible and specific regardless of the topic."}/>
+                     
+                        <WhyChooseMeCard
+                        icon={<CheckCircleIcon className='text-terracotta'/>}
+                        title={'SEO Built In'}
+                        description={'Keyword placement, header structure, and formatting for readability are part of how I write.'}/>
 
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Innovative Solutions'}
-                        description={'Creating approach that combines creativity, strategy, and technology to offer unique solutions.'}/>
+                        title={'Reliable and Self-Managed '}
+                        description={'I manage feedback cycles, incorporate revisions, and deliver on time.'}/>
 
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Reliable Deadlines'}
-                        description={'Ensuring all content projects are delivered promptly and reliably'}/>
+                        title={'Feedback-Responsive'}
+                        description={'I take client notes seriously and turn around revisions without friction. The goal is always a final product the client is genuinely happy with, not just something that technically meets the brief.'}/>
+
+                        <WhyChooseMeCard
+                        icon={<CheckCircleIcon className='text-terracotta'/>}
+                        title={'Consistent Quality Across Formats'}
+                        description={'From long-form destination guides to short-form news articles to conversion copy for tour listings, the standard stays the same regardless of the format or the word count.'}/>
                     </div>
-
                 </div>
             </div>
         </section>

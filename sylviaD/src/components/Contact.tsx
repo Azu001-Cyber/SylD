@@ -7,7 +7,7 @@ export default function Contact() {
     name: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -68,15 +68,6 @@ export default function Contact() {
                 >
                   <FaSquareUpwork className="w-5 h-5" />
                 </a> 
-                
-                {/*<a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-cream border-2 border-brown-light border-opacity-30 flex items-center justify-center text-brown hover:border-terracotta hover:text-terracotta transition-all hover:scale-110 shadow-sm"
-                >
-                  <Twitter className="w-5 h-5" />
-                </a> */}
               </div>
             </div>
 
