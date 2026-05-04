@@ -52,7 +52,7 @@ import { useEffect } from 'react';
     },
     {
         id: 'hr-admin-assistant',
-        title: 'HR / Admin Assistant',
+        title: 'HR & Admin Assistant',
         icon: <UserCog className="w-8 h-8" />,
         color: 'sage'
     }
@@ -70,15 +70,14 @@ const  DataEntry = () => {
                 <HeroExperiance>
                     <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
                     <p className='text-black font-bold text-5xl mb-3 font-serif'>Data Entry</p>
-                    <p className='text-gray-500'> Transforming raw AI output into high-quality, 
-                        human-centric content that resonates with your brand voice and passes the toughest scrutiny.
+                    <p className='text-gray-500'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem aperiam deserunt, minus nisi debitis quos! Ullam atque omnis ad perferendis, ab dolores vel consequatur, at, odio ducimus eveniet libero!
                     </p>
                 </HeroExperiance>
             </div>
 
             {/* What i do */}
             <div className='mx-auto px-6 py-20 w-full bg-cream-light'>
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <div className="text-center py-10 text-black">
                         <h2 className='text-2xl md:text-4xl pb-3'>
                         What I Do
@@ -88,18 +87,33 @@ const  DataEntry = () => {
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
                         <WhatIDoCard
                         icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'Narrative Storytelling'}
-                        description={'Engaging readers with compelling brand stories and clear messaging'}
+                        title={'Data Entry and Record Management'}
+                        description={"Creating, updating, and maintaining large volumes of structured records relating to healthcare professionals and healthcare organizations within a cloud-based system, ensuring accuracy, consistency, and data quality are upheld across every record processed."}
                         />
                         <WhatIDoCard
                         icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'SEO Strategy'}
-                        description={'Engaging readers with compelling brand stories and clear messaging'}
+                        title={'Data Verification and Research'}
+                        description={"Conducting extensive manual research to verify key data fields against official websites, verified online directories, and authoritative professional and organizational listings, and performing phone-based verification when online sources are insufficient or inconclusive."}
                         />
                         <WhatIDoCard
                         icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'Website Copywriting'}
-                        description={'Engaging readers with compelling brand stories and clear messaging'}
+                        title={'Record Prioritization and Quality Control'}
+                        description={"Reviewing pre-filtered sets of records, manually selecting individual entries for verification, identifying which data fields require updating or confirmation, and distinguishing between critical data points and lower-priority information in accordance with project guidelines."}
+                        />
+                        <WhatIDoCard
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        title={'New Data Identification and Documentation'}
+                        description={"Identifying new or missing data during the research process, documenting newly discovered sources and directories in shared spreadsheets, and logging information for further verification and potential record creation prior to system entry."}
+                        />
+                        <WhatIDoCard
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        title={'High-Volume Processing '}
+                        description={"Processing in excess of 100 records per day while maintaining accuracy and full adherence to established standard operating procedures, sustaining consistent output across extended periods without compromising data quality."}
+                        />
+                        <WhatIDoCard
+                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        title={'Compliance and Scope Management '}
+                        description={"Ensuring all work is performed within defined project scope and compliance requirements, appropriately flagging or excluding records that fall outside coverage guidelines, and maintaining clear accountability throughout the process."}
                         />
                     </div>
 
@@ -107,25 +121,40 @@ const  DataEntry = () => {
             </div>
 
             {/* My Process */}
-            <div className=' container max-w-5xl mx-auto px-6 py-10'>
+            <div className=' container max-w-6xl mx-auto px-6 py-10'>
                 <div className='text-center py-10 text-black'>
                     <h2 className='text-2xl md:text-4xl'>My Process</h2>
                 </div>
                 <div className='grid gird-cols-1 md:grid-cols-3 gap-10 text-center'>
                     <MyProcess
                     label={'1'}
-                    title={'Scan'}
-                    description={'Deep dive into goals, audience, and brand voice requirements'}
+                    title={'Assignment Review'}
+                    description={"Receiving pre-filtered work assignments determined by internal systems based on criteria such as location or record type, reviewing the scope of records allocated, and identifying the priority order for verification based on project guidelines before commencing work."}
                     />
                     <MyProcess
                     label={'2'}
-                    title={'Verify'}
-                    description={'Deep dive into goals, audience, and brand voice requirements'}
+                    title={'Record Selection and Assessment'}
+                    description={"Manually selecting individual records from the assigned set and conducting an initial assessment of each entry to determine which data fields require verification, updating, or confirmation, and which are lower priority based on established criteria."}
                     />
                     <MyProcess 
                     label={'3'}
-                    title={'Polish'}
-                    description={'Deep dive into goals, audience, and brand voice requirements'}
+                    title={'Research and Verification '}
+                    description={"Cross-referencing key data fields against official websites, verified online directories, and authoritative professional or organizational listings. Where online sources are insufficient or inconclusive, conducting direct phone-based verification with the relevant healthcare professional or organization to confirm accurate details"}
+                    />
+                    <MyProcess
+                    label={'4'}
+                    title={'Record Update and Entry '}
+                    description={"Updating or creating records within the system based on verified information, ensuring all entries are accurate, consistently formatted, and compliant with the applicable data quality standards and SOPs before finalizing."}
+                    />
+                    <MyProcess
+                    label={'5'}
+                    title={'New Source Documentation '}
+                    description={"Flagging and documenting any new directories or data sources identified during the research process in shared spreadsheets, logging the information with appropriate status markers for further verification and potential record creation"}
+                    />
+                    <MyProcess 
+                    label={'6'}
+                    title={'Progress Tracking and Reporting'}
+                    description={"Maintaining clear and up-to-date status markers across all assigned records in Google Sheets, reflecting whether each item is not started, in progress, or completed, and participating in regular team meetings and weekly reviews to track progress, align on targets, and contribute to process improvement discussions."}
                     />
                 </div>
             </div>
@@ -212,23 +241,33 @@ const  DataEntry = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Strong Communication'}
-                        description={'Responsive to feedback, communicate, and collaborate seamlessly'}/>
+                        title={'Accuracy at Volume '}
+                        description={"Processing in excess of 100 records per day without allowing output targets to compromise data quality requires both discipline and a systematic approach. Every record is verified thoroughly regardless of volume, and accuracy is treated as non-negotiable rather than aspirational."}/>
 
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Expectise & Experience'}
-                        description={'Understanding industry trends to deliver solutions that are effective, professional, and results-driven.'}/>
+                        title={'Research-Driven Verification '}
+                        description={"Data verification is conducted through multiple layers of research before a record is considered confirmed. Official sources, verified directories, and direct phone contact are all employed where necessary to ensure the information entered into the system is reliable and authoritative."}/>
 
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Innovative Solutions'}
-                        description={'Creating approach that combines creativity, strategy, and technology to offer unique solutions.'}/>
+                        title={'Methodical and Consistent '}
+                        description={"Working within defined SOPs and project scope requirements demands consistency across every record, every day. The same standard of care applied to the first record is applied to the hundredth, and compliance requirements are observed without exception."}/>
 
                         <WhyChooseMeCard
                         icon={<CheckCircleIcon className='text-terracotta'/>}
-                        title={'Reliable Deadlines'}
-                        description={'Ensuring all content projects are delivered promptly and reliably'}/>
+                        title={'Proactive Data Identification'}
+                        description={"Verification work is not treated as a closed process. When new sources or missing data are identified during research, they are documented and submitted for review rather than disregarded, contributing to the ongoing improvement and completeness of the database."}/>
+
+                        <WhyChooseMeCard
+                        icon={<CheckCircleIcon className='text-terracotta'/>}
+                        title={'Accountable and Transparent '}
+                        description={"Progress is tracked clearly and consistently, with accurate status markers maintained throughout the assignment. Stakeholders have full visibility of where work stands at any given time without needing to follow up for updates."}/>
+
+                        <WhyChooseMeCard
+                        icon={<CheckCircleIcon className='text-terracotta'/>}
+                        title={'Collaborative and Process-Oriented'}
+                        description={"Regular participation in team meetings and weekly reviews is approached as an opportunity to align on targets, flag any process issues, and contribute constructively to improvements that benefit overall team performance."}/>
                     </div>
 
                 </div>
