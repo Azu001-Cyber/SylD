@@ -32,13 +32,13 @@ import { useEffect } from 'react';
         color: 'sage'
     },
     {
-    id: 'ai-editing',
-    title: 'AI Content Editing',
-    icon: <BrainCircuit className="w-8 h-8" />,
-    color: 'brown'
+        id: 'ai_editing',
+        title: 'AI Content Editing',
+        icon: <BrainCircuit className="w-8 h-8" />,
+        color: 'brown'
     },
     {
-        id: 'blog-management',
+        id: 'blog_management',
         title: 'Blog & Content Management',
         icon: <Calendar className="w-8 h-8" />,
         color: 'terracotta'
@@ -50,8 +50,8 @@ import { useEffect } from 'react';
     //     color: 'sage'
     // },
     {
-        id: 'hr-admin-assistant',
-        title: 'HR & Admin Assistant',
+        id: 'hr_staffing',
+        title: 'HR & Staffing',
         icon: <UserCog className="w-8 h-8" />,
         color: 'sage'
     }
@@ -220,15 +220,15 @@ const CustomerService = () => {
                         title={'Saas Content Strategy'}
                         year={'2026'}
                         description={'Case Study'}
-                        tools={'Chatgpt  NotePad Notion'}
+                        tools={['Chatgpt', 'NotePad', 'Notion']}
                         link={'https://GoSomewhere'}/>
 
                         <RecentWorkProjectCard
-                        image={'/'}
+                        image='https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=800'
                         title={'Saas Content Strategy'}
                         year={'2026'}
                         description={'Case Study'}
-                        tools={'Chatgpt NotePad Notion'}
+                        tools={['Chatgpt', 'NotePad', 'Notion']}
                         link={'https://GoSomewhere'}/>
                     </div>
 

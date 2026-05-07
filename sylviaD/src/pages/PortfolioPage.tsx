@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Portfolio from '../components/Portfolio';
 
-export default function PortfolioPage() {
+const portfolioPage = () => {
   return (
     <div className="min-h-screen">
       <section className="py-12 bg-cream-light border-b border-brown-light border-opacity-20">
@@ -25,3 +25,5 @@ export default function PortfolioPage() {
     </div>
   );
 }
+
+export default portfolioPage;

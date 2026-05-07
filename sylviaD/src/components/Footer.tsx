@@ -14,8 +14,8 @@ export default function Footer() {
 
           <div className="mt-5">
             <ul className="flex items-center justify-center gap-5 font-semibold">
-              <li className="hover:text-terracotta text-terracotta md:text-brown transition duration-300 ease-in-out"><a href=""></a>LinkedIn</li>
-              <li className="hover:text-terracotta text-terracotta md:text-brown transition duration-300 ease-in-out"><a href=""></a>Upwork</li>
+              <li className="hover:text-terracotta text-terracotta md:text-brown transition duration-300 ease-in-out"><a href="https://www.linkedin.com/in/sylvia-duruson-5128b31b6?">LinkedIn</a></li>
+              <li className="hover:text-terracotta text-terracotta md:text-brown transition duration-300 ease-in-out"><a href="https://www.upwork.com/freelancers/~0114d726578d25903f?companyReference=1524697386281852929&mp_source=share">Upwork</a></li>
             </ul>
           </div>
         </div>

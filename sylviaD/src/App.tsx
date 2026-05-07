@@ -16,7 +16,7 @@ import CustomerService from './pages/CustomerService';
 import HRAdminAssistant from './pages/HRAdminAssistant';
 
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
@@ -25,13 +25,13 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/book-consultation" element={<Consultation/>}/>
+            <Route path="/book_consultation" element={<Consultation/>}/>
             <Route path="/skills/writing" element={<ContentWriter/>}/>
-            <Route path="/skills/ai-editing" element={<AiEditing/>}/>
+            <Route path="/skills/ai_editing" element={<AiEditing/>}/>
             <Route path="/skills/data_entry" element={<DataEntry/>}/>
-            <Route path="/skills/blog-management" element={<BlogandContentManagement/>}/>
-            <Route path="skills/customer-support" element={<CustomerService/>}/>
-            <Route path="skills/hr-admin-assistant" element={<HRAdminAssistant/>}/>
+            <Route path="/skills/blog_management" element={<BlogandContentManagement/>}/>
+            <Route path="skills/customer_support" element={<CustomerService/>}/>
+            <Route path="skills/hr_staffing" element={<HRAdminAssistant/>}/>
           </Routes>
         </main>
         <Footer />

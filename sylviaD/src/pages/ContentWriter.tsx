@@ -33,26 +33,26 @@ import { useEffect } from 'react';
         color: 'sage'
     },
     {
-        id: 'ai-editing',
+        id: 'ai_editing',
         title: 'AI Content Editing',
         icon: <BrainCircuit className="w-8 h-8" />,
         color: 'brown'
     },
     {
-        id: 'blog-management',
+        id: 'blog_management',
         title: 'Blog & Content Management',
         icon: <Calendar className="w-8 h-8" />,
         color: 'terracotta'
     },
     {
-        id: 'customer-support',
+        id: 'customer_support',
         title: 'Customer Service Support',
         icon: <Headphones className="w-8 h-8" />,
         color: 'sage'
     },
     {
-        id: 'hr-admin-assistant',
-        title: 'HR & Admin Assistant',
+        id: 'hr_staffing',
+        title: 'HR & Staffing',
         icon: <UserCog className="w-8 h-8" />,
         color: 'sage'
     }
@@ -208,21 +208,21 @@ const ContentWriter = () => {
                     </div>
 
                     {/* Project container */}
-                    <div className='grid grid-cols-2 gap-10 py-10'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-8 py-10'>
                         <RecentWorkProjectCard
                         image='https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=800'
                         title={'Saas Content Strategy'}
                         year={'2026'}
                         description={'Case Study'}
-                        tools={'Chatgpt  NotePad Notion'}
+                        tools={['Chatgpt', 'NotePad', 'Notion']}
                         link={'https://GoSomewhere'}/>
 
                         <RecentWorkProjectCard
-                        image={'/'}
+                        image='https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=800'
                         title={'Saas Content Strategy'}
                         year={'2026'}
                         description={'Case Study'}
-                        tools={'Chatgpt NotePad Notion'}
+                        tools={['Chatgpt', 'NotePad', 'Notion']}
                         link={'https://GoSomewhere'}/>
                     </div>
 

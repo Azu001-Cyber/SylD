@@ -1,10 +1,13 @@
 import { useState } from 'react';
-import { ExternalLink } from 'lucide-react';
+// import { ExternalLink } from 'lucide-react';
 
 interface Project {
   id: string;
   title: string;
   description: string;
+  year: string;
+  tools: string[];
+  link: string;
   tags: string[];
   image: string;
 }
@@ -14,6 +17,9 @@ const projects: Project[] = [
     id: '1',
     title: 'Customer Insights Dashboard',
     description: 'Built an interactive dashboard analyzing 50K+ customer feedback entries, revealing actionable insights that reduced support tickets by 15%.',
+    year: "2026",
+    tools: ['Something', 'somehting-more'],
+    link:'https://test/somthing.com',
     tags: ['data-analysis', 'customer-support'],
     image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
@@ -21,6 +27,9 @@ const projects: Project[] = [
     id: '2',
     title: 'Tech Industry Blog Growth',
     description: 'Managed content strategy and SEO optimization for a tech blog, achieving 120% year-over-year traffic growth and 50K monthly readers.',
+     year: "2026",
+    tools: ['Something', 'somehting-more'],
+    link:'https://test/somthing.com',
     tags: ['writing', 'blog-management'],
     image: 'https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
@@ -28,6 +37,9 @@ const projects: Project[] = [
     id: '3',
     title: 'Editorial Style Guide',
     description: 'Developed comprehensive editorial guidelines for a 20-person content team, reducing revision cycles by 30% and ensuring brand consistency.',
+     year: "2026",
+    tools: ['Something', 'somehting-more'],
+    link:'https://test/somthing.com',
     tags: ['editing', 'writing'],
     image: 'https://images.pexels.com/photos/261510/pexels-photo-261510.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
@@ -35,6 +47,9 @@ const projects: Project[] = [
     id: '4',
     title: 'Sales Performance Analysis',
     description: 'Analyzed 3 years of sales data using Python and SQL, creating visualizations that identified $2M in untapped revenue opportunities.',
+    year: "2026",
+    tools: ['Something', 'somehting-more'],
+    link:'https://test/somthing.com',
     tags: ['data-analysis'],
     image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
@@ -42,6 +57,9 @@ const projects: Project[] = [
     id: '5',
     title: 'Support Knowledge Base',
     description: 'Created and maintained a searchable knowledge base with 200+ articles, reducing first-response time by 40% and improving CSAT scores.',
+    year: "2026",
+    tools: ['Something', 'somehting-more'],
+    link:'https://test/somthing.com',
     tags: ['customer-support', 'writing'],
     image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
@@ -49,6 +67,9 @@ const projects: Project[] = [
     id: '6',
     title: 'Content Marketing Campaign',
     description: 'Wrote and optimized a 12-part content series that generated 100K impressions and 5K qualified leads over 6 months.',
+    year: "2026",
+    tools: ['Something', 'somehting-more'],
+    link:'https://test/somthing.com',
     tags: ['writing', 'blog-management'],
     image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&w=800'
   }
@@ -63,12 +84,10 @@ const filterOptions = [
   { id: 'customer-support', label: 'Customer Service Support' }
 ];
 
-export default function Portfolio() {
+const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all');
 
-  const filteredProjects = activeFilter === 'all'
-    ? projects
-    : projects.filter(project => project.tags.includes(activeFilter));
+  const filteredProjects = activeFilter === 'all' ? projects : projects.filter(project => project.tags.includes(activeFilter));
 
   return (
     <section id="portfolio" className="py-24 bg-cream-dark">
@@ -92,6 +111,7 @@ export default function Portfolio() {
               >
                 {option.label}
               </button>
+              
             ))}
           </div>
 
@@ -110,21 +130,41 @@ export default function Portfolio() {
                   <div className="absolute inset-0 bg-brown opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-brown mb-3 flex items-center justify-between">
-                    {project.title}
-                    <ExternalLink className="w-5 h-5 text-brown-light opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </h3>
+                   <div className='flex justify-between'>
+                      <div>
+                        <h3 className="text-xl font-semibold text-brown mb-3 text-start">
+                          {project.title}
+                          {/* <ExternalLink className="w-5 h-5 text-brown-light opacity-0 group-hover:opacity-100 transition-opacity" /> */}
+                        </h3>
+                      </div>
+                      <div>
+                        <h5>{project.year}</h5>
+                      </div>
+                   </div>
+
                   <p className="text-brown-light mb-4 leading-relaxed">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map(tag => (
-                      <span
-                        key={tag}
-                        className="px-3 py-1 bg-cream text-brown text-xs font-medium rounded-full"
-                      >
-                        #{tag.replace('-', ' ')}
-                      </span>
-                    ))}
+
+                  <div className='mb-5'>
+                    <h6>
+                      Tools Used:
+                      {project.tools.map(tool => (
+                          <span 
+                            key={tool}
+                            className="px-3 py-1 bg-cream text-brown text-xs font-medium rounded-full"
+                            >
+                              
+                            {tool.replace('-', ' ')}
+                          </span>
+
+                        
+                      ))}
+                    </h6>
                   </div>
+
+                  <div className=''>
+                      <a href={project.link} className='border border-slate-300 rounded-lg p-3 my-5 hover:bg-terracotta-dark hover:text-white bg-cream opacity-2 transition-color duration-500 ease-in-out'>Live Demo</a>
+                  </div>
+  
                 </div>
               </div>
             ))}
@@ -134,3 +174,5 @@ export default function Portfolio() {
     </section>
   );
 }
+
+export default Portfolio;

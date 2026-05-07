@@ -53,7 +53,6 @@ export default function Contact() {
               <div className="flex gap-4">
                 <a
                   href="https://www.linkedin.com/in/sylvia-duruson-5128b31b6?"
-                  target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-cream border-2 border-brown-light border-opacity-30 flex items-center justify-center text-brown hover:border-terracotta hover:text-terracotta transition-all hover:scale-110 shadow-sm"
                 >
@@ -62,7 +61,6 @@ export default function Contact() {
 
                 <a
                   href="https://www.upwork.com/freelancers/~0114d726578d25903f?companyReference=1524697386281852929&mp_source=share"
-                  target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-cream border-2 border-brown-light border-opacity-30 flex items-center justify-center text-brown hover:border-terracotta hover:text-terracotta transition-all hover:scale-110 shadow-sm"
                 >

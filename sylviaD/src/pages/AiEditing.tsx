@@ -32,20 +32,20 @@ import { useEffect } from 'react';
         color: 'sage'
     },
     {
-        id: 'blog-management',
+        id: 'blog_management',
         title: 'Blog & Content Management',
         icon: <Calendar className="w-8 h-8" />,
         color: 'terracotta'
     },
     {
-        id: 'customer-support',
+        id: 'customer_support',
         title: 'Customer Service Support',
         icon: <Headphones className="w-8 h-8" />,
         color: 'sage'
     },
     {
-        id: 'hr-admin-assistant',
-        title: 'HR & Admin Assistant',
+        id: 'hr_staffing',
+        title: 'HR & Staffing',
         icon: <UserCog className="w-8 h-8" />,
         color: 'sage'
     }

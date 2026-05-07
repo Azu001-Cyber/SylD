@@ -33,19 +33,19 @@ import { useEffect } from 'react';
         color: 'sage'
     },
     {
-    id: 'ai-editing',
+    id: 'ai_editing',
     title: 'AI Content Editing',
     icon: <BrainCircuit className="w-8 h-8" />,
     color: 'brown'
     },
     {
-        id: 'blog-management',
+        id: 'blog_management',
         title: 'Blog & Content Management',
         icon: <Calendar className="w-8 h-8" />,
         color: 'terracotta'
     },
     {
-        id: 'customer-support',
+        id: 'customer_support',
         title: 'Customer Service Support',
         icon: <Headphones className="w-8 h-8" />,
         color: 'sage'
@@ -68,7 +68,7 @@ const HRAdminAssistant = () => {
             <div className='container px-6 py-20 max-w-3xl md:max-w-xl'>
                 <HeroExperiance>
                     <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
-                    <p className='text-black font-bold text-5xl mb-3 font-serif'>HR & Admin Assistant</p>
+                    <p className='text-black font-bold text-5xl mb-3 font-serif'>HR & Staffing</p>
                     <p className='text-gray-500'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nisi earum impedit dicta unde repellendus nemo saepe sit illo eius tempora, reprehenderit odio nobis cum nulla labore ullam delectus velit.
                     </p>
                 </HeroExperiance>

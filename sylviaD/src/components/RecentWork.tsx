@@ -1,11 +1,11 @@
-import React from "react";
+// import React from "react";
 
-type RecentWorkProjectCardProps = {
-    image?: React.ReactNode;
+type Props = {
+    image?: string;
     title: string;
     year: string;
     description: string;
-    tools?: string;
+    tools?: string[];
     link?: string;
 };
 
@@ -17,11 +17,14 @@ const RecentWorkProjectCard  = ({
     description, 
     tools, 
     link
-}: RecentWorkProjectCardProps) =>{
+}: Props) =>{
     return (
-        <div className="mx-auto">
-            {image && <div>{image}</div>}
-            <div className="flex">
+        <div className="mx-auto text-start border">
+            <div>
+              {<img src={image} alt="" />}
+            </div>
+            
+            <div className="flex justify-between">
                 <h3>{title}</h3>
                 <h4>{year}</h4>
             </div>
@@ -32,7 +35,11 @@ const RecentWorkProjectCard  = ({
 
             <div>
                 <p>{tools}</p>
-                <p>{link}</p>
+            </div>
+            <div>
+                <p>
+                    <a href={link}>Live Demo</a>
+                </p>
             </div>
         </div>
     )

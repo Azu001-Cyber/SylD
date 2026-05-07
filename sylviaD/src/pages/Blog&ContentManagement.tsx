@@ -33,7 +33,7 @@ import { useEffect } from 'react';
         color: 'sage'
     },
     {
-    id: 'ai-editing',
+    id: 'ai_editing',
     title: 'AI Content Editing',
     icon: <BrainCircuit className="w-8 h-8" />,
     color: 'brown'
@@ -45,14 +45,14 @@ import { useEffect } from 'react';
     //     color: 'terracotta'
     // },
     {
-        id: 'customer-support',
+        id: 'customer_support',
         title: 'Customer Service Support',
         icon: <Headphones className="w-8 h-8" />,
         color: 'sage'
     },
     {
-        id: 'hr-admin-assistant',
-        title: 'HR & Admin Assistant',
+        id: 'hr_staffing',
+        title: 'HR & Staffing',
         icon: <UserCog className="w-8 h-8" />,
         color: 'sage'
     }
@@ -211,7 +211,7 @@ const  BlogandContentManagement = () => {
                         title={'Saas Content Strategy'}
                         year={'2026'}
                         description={'Case Study'}
-                        tools={'Chatgpt  NotePad Notion'}
+                        tools={['Chatgpt',  'NotePad', 'Notion']}
                         link={'https://GoSomewhere'}/>
 
                         <RecentWorkProjectCard
@@ -219,7 +219,7 @@ const  BlogandContentManagement = () => {
                         title={'Saas Content Strategy'}
                         year={'2026'}
                         description={'Case Study'}
-                        tools={'Chatgpt NotePad Notion'}
+                        tools={['Chatgpt', 'NotePad', 'Notion']}
                         link={'https://GoSomewhere'}/>
                     </div>
 
