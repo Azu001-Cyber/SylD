@@ -6,7 +6,7 @@ import MyProcess from "../components/MyProcessExperiance"
 import WhyChooseMeCard from '../components/WhyChooseMe';
 import RecentWorkProjectCard from '../components/RecentWork';
 
-import { MousePointer, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
+import { BarChart3 , CheckCircleIcon, ArrowBigRight } from 'lucide-react';
 import {Calendar, BrainCircuit,  UserCog, Headphones, Feather} from 'lucide-react';
 import {Link} from "react-router-dom"
 import { useEffect } from 'react';
@@ -68,9 +68,9 @@ const  DataEntry = () => {
             {/* Hero Section */}
             <div className='container px-6 py-20 max-w-3xl md:max-w-xl'>
                 <HeroExperiance>
-                    <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
-                    <p className='text-black font-bold text-5xl mb-3 font-serif'>Data Entry</p>
-                    <p className='text-gray-500'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem aperiam deserunt, minus nisi debitis quos! Ullam atque omnis ad perferendis, ab dolores vel consequatur, at, odio ducimus eveniet libero!
+                    {/* <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1> */}
+                    <h1 className='text-black font-bold text-5xl mb-3 font-serif'>Data Entry</h1>
+                    <p className='text-gray-500'> Creating, updating, and maintaining large volumes of structured records relating to healthcare professionals and healthcare organizations within a cloud-based system, ensuring accuracy, consistency, and data quality are upheld across every record processed.
                     </p>
                 </HeroExperiance>
             </div>
@@ -85,33 +85,29 @@ const  DataEntry = () => {
                         <div className='border-b-4 rounded-xl border-gold w-[3em] md:w-[5em] mx-auto animate-bounce'></div>
                     </div> 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
+                       
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'Data Entry and Record Management'}
-                        description={"Creating, updating, and maintaining large volumes of structured records relating to healthcare professionals and healthcare organizations within a cloud-based system, ensuring accuracy, consistency, and data quality are upheld across every record processed."}
-                        />
-                        <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<BarChart3  className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Data Verification and Research'}
                         description={"Conducting extensive manual research to verify key data fields against official websites, verified online directories, and authoritative professional and organizational listings, and performing phone-based verification when online sources are insufficient or inconclusive."}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<BarChart3  className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Record Prioritization and Quality Control'}
                         description={"Reviewing pre-filtered sets of records, manually selecting individual entries for verification, identifying which data fields require updating or confirmation, and distinguishing between critical data points and lower-priority information in accordance with project guidelines."}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<BarChart3  className='w-5 h-5 text-terracotta-dark'/>}
                         title={'New Data Identification and Documentation'}
                         description={"Identifying new or missing data during the research process, documenting newly discovered sources and directories in shared spreadsheets, and logging information for further verification and potential record creation prior to system entry."}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<BarChart3  className='w-5 h-5 text-terracotta-dark'/>}
                         title={'High-Volume Processing '}
                         description={"Processing in excess of 100 records per day while maintaining accuracy and full adherence to established standard operating procedures, sustaining consistent output across extended periods without compromising data quality."}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<BarChart3  className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Compliance and Scope Management '}
                         description={"Ensuring all work is performed within defined project scope and compliance requirements, appropriately flagging or excluding records that fall outside coverage guidelines, and maintaining clear accountability throughout the process."}
                         />
@@ -201,7 +197,7 @@ const  DataEntry = () => {
                         </div>
                         <div className='flex justify-between items-center'>
                             <p className='text-gray-500'>A glimpse into content delivered for clients.</p>
-                            <Link to={'portfolio'}
+                            <Link to={'/portfolio'}
                             className='whitespace-nowrap flex items-center gap-2 text-terracotta-dark transition duration-700 ease-in-out hover:underline animate-pulse'>
                                 View All Projects<ArrowBigRight className=''/>
                             </Link>

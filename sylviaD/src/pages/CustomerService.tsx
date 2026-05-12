@@ -6,8 +6,8 @@ import MyProcess from "../components/MyProcessExperiance"
 import WhyChooseMeCard from '../components/WhyChooseMe';
 import RecentWorkProjectCard from '../components/RecentWork';
 
-import { MousePointer, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
-import {Calendar,BarChart3, BrainCircuit, UserCog, Feather} from 'lucide-react';
+import { Headphones, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
+import {Calendar, BarChart3, BrainCircuit, UserCog, Feather} from 'lucide-react';
 import {Link} from "react-router-dom"
 import { useEffect } from 'react';
 
@@ -66,10 +66,9 @@ const CustomerService = () => {
             {/* Hero Section */}
             <div className='container px-6 py-20 max-w-3xl md:max-w-xl'>
                 <HeroExperiance>
-                    <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
-                    <p className='text-black font-bold text-5xl mb-3 font-serif'>Customer Support</p>
-                    <p className='text-gray-500'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi in sequi dolor possimus quo exercitationem dolorum illo vitae? A nulla porro delectus repudiandae iure quasi quaerat eos perferendis distinctio animi.
-                    </p>
+                    {/* <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1> */}
+                    <h1 className='text-black font-bold text-5xl mb-3 font-serif'>Customer Support</h1>
+                    <p className='text-gray-500'> Managing pre-sale and post-sale inquiries for Shopify-based e-commerce brands across multiple industries, including food, supplements, fashion, hardware, automotive, jewelry, and pet products. Pre-sale responsibilities included responding to questions about product usage, ingredients and materials, sizing, compatibility, expected outcomes, and product comparisons, drawing on product documentation, brand pages, and independent research to provide accurate, brand-aligned responses. Post-sale responsibilities included tracking orders,investigating missing or delayed shipments, and handling returns and exchanges through Shopify.</p>
                 </HeroExperiance>
             </div>
 
@@ -83,31 +82,26 @@ const CustomerService = () => {
                         <div className='border-b-4 rounded-xl border-gold w-[3em] md:w-[5em] mx-auto animate-bounce'></div>
                     </div> 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
-                        <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'E-Commerce Customer Support'}
-                        description={"Managing pre-sale and post-sale inquiries for Shopify-based e-commerce brands across multiple industries, including food, supplements, fashion, hardware, automotive, jewelry, and pet products. Pre-sale responsibilities included responding to questions about product usage, ingredients and materials, sizing, compatibility, expected outcomes, and product comparisons, drawing on product documentation, brand pages, and independent research to provide accurate, brand-aligned responses. Post-sale responsibilities included tracking orders,investigating missing or delayed shipments, and handling returns and exchanges through Shopify."}
-                        />
 
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Headphones className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Learner Support and App Guidance'}
                         description={'Supporting learners on a subscription-based creative learning platform, working specifically within the piano support team. Responsibilities covered assisting learners with lesson progression, explaining app features and functionality, and diagnosing technical issues, including note recognition errors, MIDI cable connectivity and configuration, and app freezing or crashing. Account-related issues such as incorrect logins, loss of progress, and progress transfers between accounts were also handled.'}
                         />
 
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Headphones className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Customer Retention and Revenue Recovery '}
                         description={"Re-engaging customers who did not complete a purchase and facilitating conversion through strategic, transparent communication. This included offering promotions such as BOGO deals and bundle options, making cross-sell and upsell recommendations where they offered genuine value, and communicating all eligibility conditions clearly before the customer committed."}
                         />
 
                         <WhatIDoCard 
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Headphones className='w-5 h-5 text-terracotta-dark'/>}
                         title={"Billing and Refund Management"}
                         description={"Processing refunds, cancellations, and subscription adjustments through Stripe, PayPal, and Shopify, depending on the customer's platform and payment method. Responsibilities included assessing whether a customer qualified for a full or partial refund based on applicable policy, explaining subscription plan options and their respective benefits and limitations, and ensuring customers were fully informed before any action was taken."}/>
 
                         <WhatIDoCard 
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Headphones className='w-5 h-5 text-terracotta-dark'/>}
                         title={"Knowledge Base and Macro Development"}
                         description={"Identifying gaps in existing macros, templates, and standard operating procedures during the course of ticket investigation, drafting solutions and recommendations based on findings, and submitting them to team leads for review and incorporation into the broader knowledge base. Text expanders and macros were created and used strategically across Ticketing tools to maintain speed and consistency at volume, particularly during peak periods and holiday seasons, without compromising the quality or personalization of individual responses."}/>
                     </div>
@@ -206,7 +200,7 @@ const CustomerService = () => {
                         </div>
                         <div className='flex justify-between items-center'>
                             <p className='text-gray-500'>A glimpse into content delivered for clients.</p>
-                            <Link to={'portfolio'}
+                            <Link to={'/portfolio'}
                             className='whitespace-nowrap flex items-center gap-2 text-terracotta-dark transition duration-700 ease-in-out hover:underline animate-pulse'>
                                 View All Projects<ArrowBigRight className=''/>
                             </Link>

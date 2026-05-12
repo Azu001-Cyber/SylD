@@ -6,7 +6,7 @@ import MyProcess from "../components/MyProcessExperiance"
 import WhyChooseMeCard from '../components/WhyChooseMe';
 import RecentWorkProjectCard from '../components/RecentWork';
 
-import { MousePointer, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
+import { Feather, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
 import {BarChart3, Calendar, BrainCircuit,  UserCog, Headphones} from 'lucide-react';
 import {Link} from "react-router-dom"
 import { useEffect } from 'react';
@@ -68,8 +68,8 @@ const ContentWriter = () => {
             {/* Hero Section */}
             <div className='container px-6 py-20 max-w-3xl md:max-w-xl'>
                 <HeroExperiance>
-                    <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
-                    <p className='text-black font-bold text-5xl mb-3 font-serif'>Content Writing</p>
+                    {/* <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1> */}
+                    <h1 className='text-black font-bold text-5xl mb-3 font-serif'>Content Writing</h1>
                     <p className='text-gray-500'>Long-Form Content Researching and writing in-depth articles, 
                         destination guides, and editorial pieces that go beyond surface-level
                          information to give readers something genuinely useful and worth reading.
@@ -88,32 +88,32 @@ const ContentWriter = () => {
                     </div> 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Feather className="w-8 h-8 text-terracotta-dark" />}
                         title={'SEO Content Writing'}
                         description={'Producing keyword-optimized articles with proper header structure, natural keyword placement, and formatting built for both readers and search engines from the ground up.'}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Feather className="w-8 h-8 text-terracotta-dark" />}
                         title={'Travel Writing '}
                         description={'Covering specific destinations, activities, and attractions in detail, researching each one independently to surface what makes a place worth visiting, and giving readers the context to make real decisions.'}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Feather className="w-8 h-8 text-terracotta-dark" />}
                         title={'Tech and News Writing'}
                         description={'Covering developments across industries, including African tech, entertainment, and global news, identifying what is worth covering, researching thoroughly, and delivering clean, accurate copy on deadline.'}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Feather className="w-8 h-8 text-terracotta-dark" />}
                         title={'Multi-Niche Writing '}
                         description={'Writing across travel, tech, entertainment, food, cybersecurity, events, and decoration, adapting tone, voice, and research approach to fit each subject area and the audience it speaks to.'}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Feather className="w-8 h-8 text-terracotta-dark" />}
                         title={'Copywriting '}
                         description={'Writing conversion-focused copy for tour and experience listings, translating inclusions and itineraries into benefit-driven lines that give travelers a concrete reason to book.'}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Feather className="w-8 h-8 text-terracotta-dark" />}
                         title={'Client and Freelance Work'}
                         description={'Taking on individual client briefs across different industries, interpreting requirements accurately, delivering drafts, incorporating feedback, and managing the full writing process independently from brief to final submission.'}
                         />
@@ -200,7 +200,7 @@ const ContentWriter = () => {
                         </div>
                         <div className='flex justify-between items-center'>
                             <p className='text-gray-500'>A glimpse into content delivered for clients.</p>
-                            <Link to={'portfolio'}
+                            <Link to={'/portfolio'}
                             className='whitespace-nowrap flex items-center gap-2 text-terracotta-dark transition duration-700 ease-in-out hover:underline animate-pulse'>
                                 View all Projects<ArrowBigRight className=''/>
                             </Link>

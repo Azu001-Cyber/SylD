@@ -7,7 +7,7 @@ import MyProcess from "../components/MyProcessExperiance"
 import WhyChooseMeCard from '../components/WhyChooseMe';
 import RecentWorkProjectCard from '../components/RecentWork';
 
-import { MousePointer, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
+import { UserCog, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
 import {Calendar,BarChart3, BrainCircuit, Headphones, Feather} from 'lucide-react';
 import {Link} from "react-router-dom"
 import { useEffect } from 'react';
@@ -67,9 +67,9 @@ const HRAdminAssistant = () => {
             {/* Hero Section */}
             <div className='container px-6 py-20 max-w-3xl md:max-w-xl'>
                 <HeroExperiance>
-                    <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
-                    <p className='text-black font-bold text-5xl mb-3 font-serif'>HR & Staffing</p>
-                    <p className='text-gray-500'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nisi earum impedit dicta unde repellendus nemo saepe sit illo eius tempora, reprehenderit odio nobis cum nulla labore ullam delectus velit.
+                    {/* <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1> */}
+                    <h1 className='text-black font-bold text-5xl mb-3 font-serif'>HR & Staffing</h1>
+                    <p className='text-gray-500'> Managing end-to-end hiring processes on behalf of individual clients and small businesses, identifying and placing suitable candidates for roles across customer support, data entry, content writing, and content editing, and coordinating the full pipeline from sourcing through to placement.
                     </p>
                 </HeroExperiance>
             </div>
@@ -85,48 +85,43 @@ const HRAdminAssistant = () => {
                     </div> 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'Independent Contractor Placement'}
-                        description={"Managing end-to-end hiring processes on behalf of individual clients and small businesses, identifying and placing suitable candidates for roles across customer support, data entry, content writing, and content editing, and coordinating the full pipeline from sourcing through to placement."}
-                        />
-                        <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<UserCog className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Medical and Clinical Staffing Support '}
                         description={"Supporting the recruitment operations of a medical staffing company responsible for placing clinicians across long-term care facilities, assisted living facilities, and home health settings, managing candidate pipelines, outreach, compliance, and credentialing as part of an internal staffing team."}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<UserCog className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Candidate Pipeline Management'}
                         description={"Reviewing and sorting incoming candidate responses, assessing eligibility against role and facility requirements, and progressing candidates through defined pipeline stages from initial contact through to interviewing, onboarding, or prospecting status."}
                         />
                       
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<UserCog className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Onboarding Coordination '}
                         description={"Managing onboarding workflows for remote contractors and healthcare clinicians, including document collection, credential verification, compliance checks, drug screening coordination, and ensuring all requirements are met prior to commencement."}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<UserCog className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Contract Drafting and Management '}
                         description={"Drafting, reviewing, and managing contractor agreements and offer letters for independently placed contractors, tracking renewal dates, amendments, and expiry timelines, and ensuring all documentation is accurate, complete, and appropriately stored."}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<UserCog className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Offboarding and Termination Administration'}
                         description={"Managing offboarding processes for departing contractors, including the preparation of termination documentation and maintaining accurate records throughout the process."}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<UserCog className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Contractor Records and Directory Management'}
                         description={"Building and maintaining centralized contractor directories, capturing contact details, time zones, contract types, pay rates, compliance status, and key renewal milestones as a single source of truth for the operation."}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<UserCog className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Payroll Coordination and Hours Tracking '}
                         description={"Coordinating contractor payment runs by cross-referencing submitted timesheets or shift schedules against agreed rates, verifying hours worked prior to payment, and ensuring accurate and timely disbursement in alignment with individual contract terms."}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<UserCog className='w-5 h-5 text-terracotta-dark'/>}
                         title={"SOP and Template Development"}
                         description={"Developing standardized templates and documented procedures for recurring HR and staffing processes, including onboarding, offboarding, outreach, and contract renewals, ensuring consistency across every hire regardless of role or setting."}
                         />
@@ -221,7 +216,7 @@ const HRAdminAssistant = () => {
                         </div>
                         <div className='flex justify-between items-center'>
                             <p className='text-gray-500'>A glimpse into content delivered for clients.</p>
-                            <Link to={'portfolio'}
+                            <Link to={'/portfolio'}
                             className='whitespace-nowrap flex items-center gap-2 text-terracotta-dark transition duration-700 ease-in-out hover:underline animate-pulse'>
                                 View All Projects<ArrowBigRight className=''/>
                             </Link>

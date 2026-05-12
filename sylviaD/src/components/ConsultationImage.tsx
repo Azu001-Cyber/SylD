@@ -1,4 +1,5 @@
 import illustration from "../assets/consultation-illustration.jpg";
+// import avatar from "../assets/avatar.jpg"
 
 const IllustrationPanel = () => (
     <div className="relative overflow-hidden h-64 md:h-full hidden md:block">

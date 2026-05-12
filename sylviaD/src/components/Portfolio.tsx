@@ -138,14 +138,14 @@ const Portfolio = () => {
                         </h3>
                       </div>
                       <div>
-                        <h5>{project.year}</h5>
+                        <h5 className='font-mono font-black'>{project.year}</h5>
                       </div>
                    </div>
 
                   <p className="text-brown-light mb-4 leading-relaxed">{project.description}</p>
 
                   <div className='mb-5'>
-                    <h6>
+                    <h6 className='font-semibold text-sm'>
                       Tools Used:
                       {project.tools.map(tool => (
                           <span 
@@ -162,7 +162,7 @@ const Portfolio = () => {
                   </div>
 
                   <div className=''>
-                      <a href={project.link} className='border border-slate-300 rounded-lg p-3 my-5 hover:bg-terracotta-dark hover:text-white bg-cream opacity-2 transition-color duration-500 ease-in-out'>Live Demo</a>
+                      <a href={project.link} className='border border-slate-300 rounded-xl p-3 my-5 hover:bg-terracotta hover:text-white bg-cream opacity-2 transition-color duration-500 ease-in-out'>Live Demo</a>
                   </div>
   
                 </div>

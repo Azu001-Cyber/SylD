@@ -6,7 +6,7 @@ import MyProcess from "../components/MyProcessExperiance"
 import WhyChooseMeCard from '../components/WhyChooseMe';
 import RecentWorkProjectCard from '../components/RecentWork';
 
-import { MousePointer, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
+import { CheckCircleIcon, ArrowBigRight, BrainCircuit } from 'lucide-react';
 import {BarChart3, Calendar, Feather, UserCog, Headphones} from 'lucide-react';
 import {Link} from "react-router-dom"
 import { useEffect } from 'react';
@@ -60,8 +60,8 @@ const AiEditing = () => {
             {/* Hero Section */}
             <div className='container px-6 py-20 max-w-3xl md:max-w-xl'>
                 <HeroExperiance>
-                    <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
-                    <p className='text-black font-bold text-5xl mb-3 font-serif'>AI Content Editing</p>
+                    {/* <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1> */}
+                    <h1 className='text-black font-bold text-5xl mb-3 font-serif'>AI Content Editing</h1>
                     <p className='text-gray-500'> Taking raw output from AI writing tools like ChatGPT, ClaudeAI,
                          and SurferSEO and editing it into something that reads like a human wrote it. 
                         That means restructuring, rewriting, tightening, and humanizing a draft.
@@ -80,32 +80,32 @@ const AiEditing = () => {
                     </div> 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<BrainCircuit className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Editorial Editing '}
                         description={'Reviewing and refining written content for clarity, structure, tone, and flow. Identifying where arguments break down, where transitions are weak, and where the writing loses the reader, and then fixing it.'}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<BrainCircuit className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Fact-Checking'}
                         description={'Cross-referencing claims, data, and information against credible sources to make sure nothing goes live that is outdated, inaccurate, or unsupported. Applied consistently across medical, tech, financial, and general content.'}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<BrainCircuit className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Proofreading'}
                         description={'Catching grammar, punctuation, spelling, and consistency errors at the final stage before publication. '}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<BrainCircuit className='w-5 h-5 text-terracotta-dark'/>}
                         title={'WordPress Formatting and Publishing '}
                         description={'Taking edited content into WordPress, applying proper header hierarchy, spacing, internal and external links, image alt text, and keyword density checks before scheduling or publishing. '}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<BrainCircuit className='w-5 h-5 text-terracotta-dark'/>}
                         title={'SEO Optimization '}
                         description={'Ensuring every piece meets on-page SEO requirements, meta titles, descriptions, header tags, keyword placement, and internal linking, as part of the standard editing and publishing workflow. '}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<BrainCircuit className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Content Tracking and Documentation '}
                         description={'Managing content pipelines through shared spreadsheets, logging article status, generation method, edit dates, and publication timelines to keep production on track and accountable.'}
                         />
@@ -200,7 +200,7 @@ const AiEditing = () => {
                         </div>
                         <div className='flex justify-between items-center'>
                             <p className='text-gray-500'>A glimpse into content delivered for clients.</p>
-                            <Link to={'portfolio'}
+                            <Link to={'/portfolio'}
                             className='whitespace-nowrap flex items-center gap-2 text-terracotta-dark transition duration-700 ease-in-out hover:underline animate-pulse'>
                                 View All Projects<ArrowBigRight className=''/>
                             </Link>

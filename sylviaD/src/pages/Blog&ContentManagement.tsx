@@ -6,7 +6,7 @@ import MyProcess from "../components/MyProcessExperiance"
 import WhyChooseMeCard from '../components/WhyChooseMe';
 import RecentWorkProjectCard from '../components/RecentWork';
 
-import { MousePointer, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
+import { Calendar, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
 import {BarChart3, BrainCircuit,  UserCog, Headphones, Feather} from 'lucide-react';
 import {Link} from "react-router-dom"
 import { useEffect } from 'react';
@@ -67,9 +67,9 @@ const  BlogandContentManagement = () => {
             {/* Hero Section */}
             <div className='container px-6 py-20 max-w-3xl md:max-w-xl'>
                 <HeroExperiance>
-                    <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1>
-                    <p className='text-black font-bold text-5xl mb-3 font-serif'>Blog & Content Management</p>
-                    <p className='text-gray-500'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur minus pariatur sint aspernatur. Recusandae earum facere omnis aut voluptatum mollitia facilis, quibusdam debitis ipsa provident dignissimos amet! Minima, ex natus!
+                    {/* <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1> */}
+                    <h1 className='text-black font-bold text-5xl mb-3 font-serif'>Blog & Content Management</h1>
+                    <p className='text-gray-500'>Overseeing the full content production cycle from story ideation and assignment through to final publication, ensuring each piece progresses through every stage on schedule and to the required standard without disruption to the broader pipeline
                     </p>
                 </HeroExperiance>
             </div>
@@ -85,32 +85,27 @@ const  BlogandContentManagement = () => {
                     </div> 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
-                        title={'Editorial Pipeline Management'}
-                        description={"Overseeing the full content production cycle from story ideation and assignment through to final publication, ensuring each piece progresses through every stage on schedule and to the required standard without disruption to the broader pipeline."}
-                        />
-                        <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Calendar className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Story Assignment and Commissioning'}
                         description={"Identifying topics of relevance, timeliness, and editorial fit, assigning them to writers accordingly, and evaluating pitches submitted by the team against publication scope and newsworthiness to determine what proceeds to production."}
                         />
                         <WhatIDoCard
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Calendar className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Draft Review and Structured Feedback'}
                         description={"Conducting thorough reviews of submitted drafts across accuracy, clarity, tone, structure, and overall quality, and delivering detailed, actionable feedback that provides writers with a clear and specific path to improvement prior to resubmission."}
                         />
                         <WhatIDoCard 
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Calendar className='w-5 h-5 text-terracotta-dark'/>}
                         title={"SEO and Pre-Publication Optimization "}
                         description={"Managing the final editorial layer before publication, encompassing SEO optimization, internal and external linking, meta title and description writing, header tag review, image sourcing and alt text, and full WordPress formatting."}/>
                         
                         <WhatIDoCard 
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Calendar className='w-5 h-5 text-terracotta-dark'/>}
                         title={"Content Scheduling and Calendar Management"}
                         description={"Coordinating publication timelines across multiple pieces simultaneously, scheduling content in alignment with the editorial calendar, and sustaining consistent output without disruption to the publication's cadence or standards."}/>
 
                         <WhatIDoCard 
-                        icon={<MousePointer className='w-5 h-5 text-terracotta-dark'/>}
+                        icon={<Calendar className='w-5 h-5 text-terracotta-dark'/>}
                         title={"Team Coordination and Communication"}
                         description={"Maintaining clear and proactive communication with writers, editors, and publication owners throughout the pipeline, flagging potential delays or issues in advance, and ensuring all relevant parties remain informed of progress and any adjustments to timelines."}/>
                     </div>
@@ -197,7 +192,7 @@ const  BlogandContentManagement = () => {
                         </div>
                         <div className='flex justify-between items-center'>
                             <p className='text-gray-500'>A glimpse into content delivered for clients.</p>
-                            <Link to={'portfolio'}
+                            <Link to={'/portfolio'}
                             className='whitespace-nowrap flex items-center gap-2 text-terracotta-dark transition duration-700 ease-in-out hover:underline animate-pulse'>
                                 View All Projects<ArrowBigRight className=''/>
                             </Link>

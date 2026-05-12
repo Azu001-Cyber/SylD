@@ -99,7 +99,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg border border-brown-light border-opacity-30 bg-cream focus:border-terracotta focus:ring-2 focus:ring-terracotta focus:ring-opacity-20 outline-none transition-all"
-                    placeholder="your.email@example.com"
+                    placeholder="youremail@example.com"
                   />
                 </div>
 
