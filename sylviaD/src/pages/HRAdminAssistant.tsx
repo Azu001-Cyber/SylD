@@ -69,7 +69,9 @@ const HRAdminAssistant = () => {
                 <HeroExperiance>
                     {/* <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1> */}
                     <h1 className='text-black font-bold text-5xl mb-3 font-serif'>HR & Staffing</h1>
-                    <p className='text-gray-500'> Managing end-to-end hiring processes on behalf of individual clients and small businesses, identifying and placing suitable candidates for roles across customer support, data entry, content writing, and content editing, and coordinating the full pipeline from sourcing through to placement.
+                    <p className='text-gray-500'> 
+                        End-to-end recruitment and HR administration experience spanning both independent contractor placement for small businesses and sourcing support within a medical staffing company. Responsibilities covered the full hiring lifecycle from candidate sourcing and pipeline management through to onboarding, contract administration, compliance verification, 
+                        payroll coordination, and offboarding, across remote and healthcare staffing environments.
                     </p>
                 </HeroExperiance>
             </div>
@@ -84,10 +86,16 @@ const HRAdminAssistant = () => {
                         <div className='border-b-4 rounded-xl border-gold w-[3em] md:w-[5em] mx-auto animate-bounce'></div>
                     </div> 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
+
                         <WhatIDoCard
                         icon={<UserCog className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Medical and Clinical Staffing Support '}
                         description={"Supporting the recruitment operations of a medical staffing company responsible for placing clinicians across long-term care facilities, assisted living facilities, and home health settings, managing candidate pipelines, outreach, compliance, and credentialing as part of an internal staffing team."}
+                        />
+                        <WhatIDoCard
+                        icon={<UserCog className='w-5 h-5 text-terracotta-dark'/>}
+                        title={'Independent Contractor Placement'}
+                        description={"Managing end-to-end hiring processes on behalf of individual clients and small businesses, identifying and placing suitable candidates for roles across customer support, data entry, content writing, and content editing, and coordinating the full pipeline from sourcing through to placement."}
                         />
                         <WhatIDoCard
                         icon={<UserCog className='w-5 h-5 text-terracotta-dark'/>}

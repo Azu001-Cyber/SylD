@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Feather, ChevronLeft } from 'lucide-react';
+import { Feather, ChevronRight } from 'lucide-react';
 import { Spin as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 import "../css/Header.css"
@@ -35,7 +35,7 @@ export default function Header() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">
-            <Feather className="w-6 h-6 text-terracotta group-hover:scale-110 transition-transform" />
+            {/* <Feather className="w-6 h-6 text-terracotta group-hover:scale-110 transition-transform" /> */}
             <span className="text-xl font-bold text-brown md:text-nowrap">Sylvia Duruson</span>
           </Link>
 
@@ -74,10 +74,10 @@ export default function Header() {
                 >
                   Skills
 
-                  <ChevronLeft
+                  <ChevronRight
                     size={18}
                     className={`transition-transform duration-300 ${
-                      skillsOpen ? '-rotate-90' : ''
+                      skillsOpen ? 'rotate-90' : ''
                     }`}
                   />
                 </button>
@@ -130,7 +130,9 @@ export default function Header() {
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
                 }`}>
-              <span className='bg-terracotta text-white md:text-nowrap border border-terracotta-dark hover:bg-terracotta-dark hover:border-terracotta-light transition duration-500 hover:scale-105 ease-in-out shadow-sm rounded-full p-3 hover:text-cream-dark'>Book a Consultation</span>
+              <span className='bg-terracotta text-white md:text-nowrap border border-terracotta-dark 
+              hover:bg-terracotta-dark hover:border-terracotta-light transition duration-500 hover:scale-105 
+              ease-in-out shadow-sm rounded-2xl p-3 hover:text-cream-dark'>Book Consultation</span>
             </Link>
           </nav>
 
@@ -178,10 +180,10 @@ export default function Header() {
                   >
                     Skills
 
-                    <ChevronLeft
+                    <ChevronRight
                       size={18}
                       className={`transition-transform duration-300 ${
-                        skillsOpen ? '-rotate-90' : ''
+                        skillsOpen ? 'rotate-90' : ''
                       }`}
                     />
                   </button>
@@ -238,7 +240,7 @@ export default function Header() {
                 ? 'text-terracotta'
                 : 'text-brown hover:text-terracotta'
                 }` }>
-              <span className='bg-terracotta text-white text-nowrap border border-terracotta-dark hover:bg-terracotta-dark hover:border-terracotta-light transition duration-300 hover:scale-105 ease-in-out shadow-sm rounded-full p-3'>Book a Consultation</span>
+              <span className='bg-terracotta text-white text-nowrap border border-terracotta-dark hover:bg-terracotta-dark hover:border-terracotta-light transition duration-300 hover:scale-105 ease-in-out shadow-sm rounded-2xl p-3'>Book Consultation</span>
             </Link>
           </div>
         </nav>

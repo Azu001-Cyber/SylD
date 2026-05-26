@@ -70,7 +70,9 @@ const  DataEntry = () => {
                 <HeroExperiance>
                     {/* <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1> */}
                     <h1 className='text-black font-bold text-5xl mb-3 font-serif'>Data Entry</h1>
-                    <p className='text-gray-500'> Creating, updating, and maintaining large volumes of structured records relating to healthcare professionals and healthcare organizations within a cloud-based system, ensuring accuracy, consistency, and data quality are upheld across every record processed.
+                    <p className='text-gray-500'> 
+                        High-volume data entry and record verification experience within the healthcare sector, managing HCP and HCO records across a cloud-based platform to strict accuracy and compliance standards. The work involved multi-layer research verification, phone-based confirmation, and consistent processing of over 
+                        100 records per day, with full accountability tracked through shared documentation and weekly team reviews. 
                     </p>
                 </HeroExperiance>
             </div>
@@ -86,6 +88,11 @@ const  DataEntry = () => {
                     </div> 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
                        
+                        <WhatIDoCard
+                        icon={<BarChart3  className='w-5 h-5 text-terracotta-dark'/>}
+                        title={'Data Entry and Record Management'}
+                        description={"Creating, updating, and maintaining large volumes of structured records relating to healthcare professionals and healthcare organizations within a cloud-based system, ensuring accuracy, consistency, and data quality are upheld across every record processed."}
+                        />
                         <WhatIDoCard
                         icon={<BarChart3  className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Data Verification and Research'}

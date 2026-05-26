@@ -68,10 +68,9 @@ const CustomerService = () => {
                 <HeroExperiance>
                     {/* <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1> */}
                     <h1 className='text-black font-bold text-5xl mb-3 font-serif'>Customer Support</h1>
-                    <p className='text-gray-500'> Managing pre-sale and post-sale inquiries for Shopify-based e-commerce brands across multiple industries, including food, supplements, fashion, hardware, automotive, jewelry, and pet products. Pre-sale responsibilities included responding to questions about product usage, ingredients and materials, sizing, compatibility, expected outcomes, and product comparisons, drawing on product documentation, brand pages, and independent research to provide accurate, brand-aligned responses. Post-sale responsibilities included tracking orders,investigating missing or delayed shipments, and handling returns and exchanges through Shopify.</p>
-                </HeroExperiance>
+                    <p className='text-gray-500'> Customer-facing experience across DTC e-commerce and subscription app support, handling inquiries, resolving issues, managing billing, and maintaining customer satisfaction across high-volume, SLA-driven environments. Process-oriented, investigative by default, and committed to resolution quality at every touchpoint.</p>
+                    </HeroExperiance>
             </div>
-
             {/* What i do */}
             <div className='mx-auto px-6 py-20 w-full bg-cream-light'>
                 <div className="max-w-6xl mx-auto">
@@ -82,6 +81,13 @@ const CustomerService = () => {
                         <div className='border-b-4 rounded-xl border-gold w-[3em] md:w-[5em] mx-auto animate-bounce'></div>
                     </div> 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
+
+                        
+                        <WhatIDoCard
+                        icon={<Headphones className='w-5 h-5 text-terracotta-dark'/>}
+                        title={'E-Commerce Customer Support'}
+                        description={'Managing pre-sale and post-sale inquiries for Shopify-based e-commerce brands across multiple industries, including food, supplements, fashion, hardware, automotive, jewelry, and pet products. Pre-sale responsibilities included responding to questions about product usage, ingredients and materials, sizing, compatibility, expected outcomes, and product comparisons, drawing on product documentation, brand pages, and independent research to provide accurate, brand-aligned responses. Post-sale responsibilities included tracking orders, investigating missing or delayed shipments, and handling returns and exchanges through Shopify.'}
+                        />
 
                         <WhatIDoCard
                         icon={<Headphones className='w-5 h-5 text-terracotta-dark'/>}

@@ -69,8 +69,11 @@ const  BlogandContentManagement = () => {
                 <HeroExperiance>
                     {/* <h1 className='text-terracotta-light font-mono font-medium mb-3'>MY SPECIALIZATION</h1> */}
                     <h1 className='text-black font-bold text-5xl mb-3 font-serif'>Blog & Content Management</h1>
-                    <p className='text-gray-500'>Overseeing the full content production cycle from story ideation and assignment through to final publication, ensuring each piece progresses through every stage on schedule and to the required standard without disruption to the broader pipeline
-                    </p>
+                    <p className='text-gray-500'>Editorial pipeline management experience across two news publications, 
+                        an African tech news platform and a global news blog, 
+                        overseeing content from story assignment through to final publication. 
+                        Responsibilities spanned commissioning, writer management, structured feedback, draft review, SEO optimization, 
+                        and publishing, with full ownership of the pipeline and direct accountability to publication owners. </p>
                 </HeroExperiance>
             </div>
 
@@ -84,6 +87,11 @@ const  BlogandContentManagement = () => {
                         <div className='border-b-4 rounded-xl border-gold w-[3em] md:w-[5em] mx-auto animate-bounce'></div>
                     </div> 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 text-start'>
+                        <WhatIDoCard
+                        icon={<Calendar className='w-5 h-5 text-terracotta-dark'/>}
+                        title={'Editorial Pipeline Management'}
+                        description={"Overseeing the full content production cycle from story ideation and assignment through to final publication, ensuring each piece progresses through every stage on schedule and to the required standard without disruption to the broader pipeline."}
+                        />
                         <WhatIDoCard
                         icon={<Calendar className='w-5 h-5 text-terracotta-dark'/>}
                         title={'Story Assignment and Commissioning'}
