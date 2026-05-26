@@ -93,7 +93,7 @@ export default function Header() {
                           setSkillsOpen(false);
                           setOpen(false);
                         }}
-                        className="px-4 py-3 text-brown hover:text-terracotta transition-colors"
+                        className="px-4 py-3 text-brown font-bold hover:text-terracotta transition-colors"
                       >
                         {item.name}
                       </Link>
@@ -199,7 +199,7 @@ export default function Header() {
                             setSkillsOpen(false);
                             setOpen(false);
                           }}
-                          className="px-4 py-3 text-brown  hover:text-terracotta transition-colors"
+                          className="px-4 py-3 text-brown font-bold hover:text-terracotta transition-colors"
                         >
                           {item.name}
                         </Link>
