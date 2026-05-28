@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Feather, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { Spin as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 import "../css/Header.css"

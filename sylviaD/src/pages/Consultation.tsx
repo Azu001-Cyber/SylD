@@ -1,5 +1,5 @@
 
-import BookConsultation from "../components/BookaConsult";
+import BookConsultation from "../components/consultations/BookaConsult";
 
 
 

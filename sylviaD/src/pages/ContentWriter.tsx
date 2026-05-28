@@ -10,6 +10,7 @@ import { Feather, CheckCircleIcon, ArrowBigRight } from 'lucide-react';
 import {BarChart3, Calendar, BrainCircuit,  UserCog, Headphones} from 'lucide-react';
 import {Link} from "react-router-dom"
 import { useEffect } from 'react';
+import tcImg from "../../public/logos/tc.png"
 
 
     interface Skill {
@@ -210,20 +211,20 @@ const ContentWriter = () => {
                     {/* Project container */}
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-8 py-10'>
                         <RecentWorkProjectCard
-                        image='https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=800'
-                        title={'Saas Content Strategy'}
-                        year={'2026'}
-                        description={'Case Study'}
-                        tools={['Chatgpt', 'NotePad', 'Notion']}
-                        link={'https://GoSomewhere'}/>
+                        image={tcImg}
+                        title='Tourist Checklist'
+                        year='2023'
+                        description={'Build a go-to US travel guide platform that helps travelers confidently explore any city with deeply researched, long-form guides on the best attractions, activities, food, and hidden gems, cutting through generic listicles to deliver real, practical insights on exactly where to go and what to do.'}
+                        tools={['WordPress', 'SEO Formatting']}
+                        link={'/skills/writing/touristchecklist'}/>
 
                         <RecentWorkProjectCard
                         image='https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=800'
-                        title={'Saas Content Strategy'}
+                        title='Freelance Writing'
                         year={'2026'}
-                        description={'Case Study'}
+                        description={'Provide high-quality, SEO-optimized, and audience-focused content writing services across multiple niches including food, cybersecurity, travel, and events, helping businesses and creators publish well-researched and engaging content without the cost or commitment of hiring a full-time writer.'}
                         tools={['Chatgpt', 'NotePad', 'Notion']}
-                        link={'https://GoSomewhere'}/>
+                        link={'/skills/writing/freelancewriting'}/>
                     </div>
 
                 </div>

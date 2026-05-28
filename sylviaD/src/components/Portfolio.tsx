@@ -15,194 +15,74 @@ interface Project {
 const projects: Project[] = [
   {
     id: '1',
-    title: 'TechinAfrica',
-    description: 'Built an interactive dashboard analyzing 50K+ customer feedback entries, revealing actionable insights that reduced support tickets by 15%.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://www.techinafrica.com/author/sylvia-duruson/',
-    tags: [ 'writing', 'blog-management'],
-    image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
+    title: 'Tourist Checklist',
+    description: 'Build a go-to US travel guide platform that helps travelers confidently explore any city with deeply researched, long-form guides on the best attractions, activities, food, and hidden gems, cutting through generic listicles to deliver real, practical insights on exactly where to go and what to do.',
+    year: "2023",
+    tools: ['WordPress', 'SEO Formatting'],
+    link:'/skills/writing/touristchecklist',
+    tags: ['writing'],
+    image: 'https://images.pexels.com/photos/261510/pexels-photo-261510.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: '2',
-    title: 'Tourist Checklist',
-    description: 'Managed content strategy and SEO optimization for a tech blog, achieving 120% year-over-year traffic growth and 50K monthly readers.',
-     year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://thetouristchecklist.com/things-to-do-in-huntersville-nc/',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=800'
+    title: 'We Train Phlebotomy',
+    description: 'Manage AI-assisted content editing and publishing for a medical education website by refining SurferSEO and ChatGPT-generated drafts through a structured editorial workflow, ensuring every article is accurate, readable, medically responsible, and fully SEO-optimized before publication, bridging the gap between raw AI output and publication-ready content.',
+    year: "2024",
+    tools: ['SurferSEO, ChatGPT, WordPress, Google Sheets'],
+    link:' https://wetrainphlebotomists.com/',
+    tags: ['editing'],
+    image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: '3',
-    title: 'Tourist Checklist',
-    description: 'Developed comprehensive editorial guidelines for a 20-person content team, reducing revision cycles by 30% and ensuring brand consistency.',
-     year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'thetouristchecklist.com/fun-things-to-do-in-lees-summit-mo/',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/261510/pexels-photo-261510.jpeg?auto=compress&cs=tinysrgb&w=800'
+    title: 'TechinAfrica',
+    description: 'Run and manage a full editorial workflow for an African tech news publication by coordinating story assignments, reviewing drafts, providing structured feedback, and handling SEO optimization through to final publication, ensuring consistent output, high-quality reporting, and a smooth, uninterrupted publishing pipeline.',
+    year: "2025",
+    tools: ['WordPress', ' Google Drive', 'SEO Rormatting '],
+    link:'https://www.techinafrica.com/author/sylvia-duruson/',
+    tags: ['writing', 'blog-management'],
+    image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: '4',
-    title: 'Tourist Checklist',
-    description: 'Analyzed 3 years of sales data using Python and SQL, creating visualizations that identified $2M in untapped revenue opportunities.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://thetouristchecklist.com/things-to-do-in-league-city-tx/',
+    title: 'Freelance Content Writing',
+    description: 'Provide high-quality, SEO-optimized, and audience-focused content writing services across multiple niches including food, cybersecurity, travel, and events. Helping businesses and creators publish well-researched and engaging content without the cost or commitment of hiring a full-time writer.',
+    year: "2025",
+    tools: ['WordPress', 'SEO Formatting'],
+    link:'/skills/writing/freelancewriting',
     tags: ['writing'],
-    image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: '5',
-    title: 'Tourist Checklist',
-    description: 'Created and maintained a searchable knowledge base with 200+ articles, reducing first-response time by 40% and improving CSAT scores.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://thetouristchecklist.com/fun-things-to-do-in-plant-city-fl',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: '6',
-    title: 'Tourist Checklist',
-    description: 'Wrote and optimized a 12-part content series that generated 100K impressions and 5K qualified leads over 6 months.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://thetouristchecklist.com/best-bowling-centers-in-charlotte-nc/',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-   {
-    id: '7',
-    title: 'Tourist Checklist',
-    description: 'Built an interactive dashboard analyzing 50K+ customer feedback entries, revealing actionable insights that reduced support tickets by 15%.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://thetouristchecklist.com/fun-things-to-do-in-olathe-ks/',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: '8',
-    title: 'Freelance Cybersecurity Writing',
-    description: 'Managed content strategy and SEO optimization for a tech blog, achieving 120% year-over-year traffic growth and 50K monthly readers.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://www.atamgo.com/dont-let-hackers-ruin-your-marketing-campaigns/',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: '9',
-    title: 'Freelance Cybersecurity Writing',
-    description: 'Developed comprehensive editorial guidelines for a 20-person content team, reducing revision cycles by 30% and ensuring brand consistency.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://www.brandvm.com/post/business-travel-mistakes-5-things-to-avoid-to-keep-your-data-safe',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/261510/pexels-photo-261510.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: '10',
-    title: 'Freelance Cybersecurity Writing',
-    description: 'Analyzed 3 years of sales data using Python and SQL, creating visualizations that identified $2M in untapped revenue opportunities.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://luxafor.com/how-to-stay-productive-while-working-remotely/',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: '11',
-    title: 'Freelance Cybersecurity Writing',
-    description: 'Created and maintained a searchable knowledge base with 200+ articles, reducing first-response time by 40% and improving CSAT scores.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://starngage.com/plus/en-us/blog/how-to-thrive-and-succeed-as-an-influencer',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: '12',
-    title: 'Freelance Cybersecurity Writing',
-    description: 'Wrote and optimized a 12-part content series that generated 100K impressions and 5K qualified leads over 6 months.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://www.instagram.com/bbntimesofficial/p/DFdGhKrtJQB/',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-   {
-    id: '13',
-    title: 'Consulting Company',
-    description: 'Built an interactive dashboard analyzing 50K+ customer feedback entries, revealing actionable insights that reduced support tickets by 15%.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://www.linkedin.com/posts/partfinda_everything-big-starts-small-but-theres-activity-7079742222539046912-K_sI?utm_source=share&utm_medium=member_android',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: '14',
-    title: 'Consulting Company',
-    description: 'Managed content strategy and SEO optimization for a tech blog, achieving 120% year-over-year traffic growth and 50K monthly readers.',
-     year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://www.linkedin.com/posts/partfinda_leveraging-linkedin-as-a-platform-activity-7080466424216829952-6W6N?utm_source=share&utm_medium=member_android',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: '15',
-    title: 'Consulting Company',
-    description: 'Analyzed 3 years of sales data using Python and SQL, creating visualizations that identified $2M in untapped revenue opportunities.',
-    year: "2026",
-    tools: ['customer-support'],
-    link:'https://www.linkedin.com/posts/partfinda_funding-capital-investment-activity-7083370413765910528-4Lgy?utm_source=share&utm_medium=member_android',
-    tags: ['writing'],
-    image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: '16',
-    title: 'Content Editing',
-    description: 'Developed comprehensive editorial guidelines for a 20-person content team, reducing revision cycles by 30% and ensuring brand consistency.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://wetrainphlebotomists.com/',
-    tags: ['editing'],
-    image: 'https://images.pexels.com/photos/261510/pexels-photo-261510.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: '17',
-    title: 'HR & Staffing',
-    description: 'Created and maintained a searchable knowledge base with 200+ articles, reducing first-response time by 40% and improving CSAT scores.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://sylvia-contract-tracker.vercel.app/',
-    tags: ['hr-staffing'],
-    image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: '18',
-    title: 'Customer Support',
-    description: 'Wrote and optimized a 12-part content series that generated 100K impressions and 5K qualified leads over 6 months.',
-    year: "2026",
-    tools: ['Something', 'somehting-more'],
-    link:'https://sylvia-co.vercel.app/',
-    tags: [ 'customer-support',],
-    image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-   {
-    id: '19',
     title: 'Data Entry',
-    description: 'Wrote and optimized a 12-part content series that generated 100K impressions and 5K qualified leads over 6 months.',
-    year: "APR 2024 - APR 2025",
+    description: 'Manage high-volume structured data entry and verification for a healthcare-focused cloud computing platform by accurately recording and validating information on healthcare professionals and organizations through systematic research, direct verification, and strict data quality standards, ensuring a reliable, consistent, and complete database.',
+    year: "2025",
     tools: ['Veeva Systems', 'Google Suite', 'Zoom','VOIP'],
     link:'https://sylvia-data-entry.vercel.app/',
     tags: ['data-entry'],
     image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&w=800'
-  }
+  },
+  {
+    id: '6',
+    title: 'Customer Support',
+    description: 'Deliver Tier 2 customer support for a live SMS platform serving Shopify-based DTC brands by handling pre-sale questions, post-sale issues, cart recovery, and billing support, ensuring fast, brand-aligned responses that improve customer satisfaction, recover lost sales, and resolve issues efficiently without unnecessary escalations.',
+    year: "2026",
+    tools: ['Front', 'Zendesk', 'Shopify', 'Gorgias', 'Jira', 'Slack','Google Sheets', 'DeepL'],
+    link:'https://sylvia-co.vercel.app/',
+    tags: [ 'customer-support',],
+    image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&w=800'
+  },
+  {
+    id: '7',
+    title: 'HR & Staffing Operations',
+    description: 'Provide end-to-end recruitment and HR administration services for small businesses and individual clients by sourcing, vetting, and placing contractors in roles such as customer support, data entry, and content creation, while also managing onboarding and ongoing contract coordination, giving clients reliable access to skilled remote talent without needing an in-house HR team.',
+    year: "Ongoing",
+    tools: ['Symplr', 'Xenqu', 'Vetty', 'Sense','Connect UTC', 'Outlook', 'Teams', 'Microsoft Authenticator', 'Excel', 'Google Sheets'],
+    link:'https://sylvia-contract-tracker.vercel.app/',
+    tags: ['hr-staffing'],
+    image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&w=800'
+  },
 ];
 
 const filterOptions = [
@@ -261,9 +141,9 @@ const Portfolio = () => {
                   <div className="absolute inset-0 bg-brown opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6">
-                   <div className=''>
+                   <div className='flex justify-between items-center'>
                       <div>
-                        <h3 className="text-xl font-semibold text-brown mb-3 text-start">
+                        <h3 className="text-xl font-semibold text-brown text-start">
                           {project.title}
                           {/* <ExternalLink className="w-5 h-5 text-brown-light opacity-0 group-hover:opacity-100 transition-opacity" /> */}
                         </h3>
@@ -273,7 +153,7 @@ const Portfolio = () => {
                       </div>
                    </div>
 
-                  <p className="text-brown-light mb-4 leading-relaxed">{project.description}</p>
+                  <p className="text-brown-light mb-4 leading-relaxed font-medium">{project.description}</p>
 
                   <div className='mb-5'>
                     <h6 className='font-semibold text-sm'>
@@ -293,7 +173,7 @@ const Portfolio = () => {
                   </div>
 
                   <div className=''>
-                      <a href={project.link} className='border border-slate-300 rounded-2xl p-3 my-5 font-semibold hover:bg-terracotta hover:text-white bg-cream opacity-2 transition-color duration-500 ease-in-out'>Live Demo</a>
+                      <a href={project.link} className='border border-slate-300 rounded-full p-3 my-5 font-semibold hover:bg-terracotta hover:text-white bg-cream opacity-2 transition-color duration-500 ease-in-out'>Live Demo</a>
                   </div>
   
                 </div>

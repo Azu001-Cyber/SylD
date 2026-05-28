@@ -37,7 +37,7 @@ export default {
           dark: '#2a3138',
         },
       },
-      fontfamily: {
+      fontFamily: {
         serif: ['Playfair Display', 'serif'],
         sans: ['Inter', 'sans-serif'],
       },

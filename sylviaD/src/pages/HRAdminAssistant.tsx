@@ -238,7 +238,7 @@ const HRAdminAssistant = () => {
                         title={'Saas Content Strategy'}
                         year={'2026'}
                         description={'Case Study'}
-                        tools={'Chatgpt  NotePad Notion'}
+                        tools={['Chatgpt', 'NotePad',' Notion']}
                         link={'https://GoSomewhere'}/>
 
                         <RecentWorkProjectCard
@@ -246,7 +246,7 @@ const HRAdminAssistant = () => {
                         title={'Saas Content Strategy'}
                         year={'2026'}
                         description={'Case Study'}
-                        tools={'Chatgpt NotePad Notion'}
+                        tools={['Chatgpt', 'NotePad',' Notion']}
                         link={'https://GoSomewhere'}/>
                     </div>
 

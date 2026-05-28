@@ -1,5 +1,5 @@
 import abtMe from "../assets/abtMe.jpg"
-import "../css/about.css"
+import "../css/About.css"
 
 export default function About() {
   return (

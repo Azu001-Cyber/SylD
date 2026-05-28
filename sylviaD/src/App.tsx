@@ -14,7 +14,8 @@ import DataEntry from './pages/DataEntry';
 import BlogandContentManagement from './pages/Blog&ContentManagement';
 import CustomerService from './pages/CustomerService';
 import HRAdminAssistant from './pages/HRAdminAssistant';
-
+import TouristChecklistArticlesPage from "./pages/TouristChecklistArticlesPage";
+import FreelanceWritingPage from './pages/FreelanceWriting';
 
 const App = () => {
   return (
@@ -32,6 +33,8 @@ const App = () => {
             <Route path="/skills/blog_management" element={<BlogandContentManagement/>}/>
             <Route path="skills/customer_support" element={<CustomerService/>}/>
             <Route path="skills/hr_staffing" element={<HRAdminAssistant/>}/>
+            <Route path="/skills/writing/touristchecklist" element={<TouristChecklistArticlesPage />} />
+            <Route path="/skills/writing/freelancewriting" element={<FreelanceWritingPage/>}/>
           </Routes>
         </main>
         <Footer />

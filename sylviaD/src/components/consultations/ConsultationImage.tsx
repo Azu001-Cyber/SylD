@@ -1,4 +1,4 @@
-import illustration from "../assets/consultation-illustration.jpg";
+import illustration from "../../assets/consultation-illustration.jpg";
 // import avatar from "../assets/avatar.jpg"
 
 const IllustrationPanel = () => (
